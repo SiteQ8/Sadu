@@ -1,0 +1,13 @@
+{
+  "sources": [
+    { "id": "corf", "en": "CBK Cyber and Operational Resilience Framework, Version 1.0", "ar": "إطار المرونة السيبرانية والتشغيلية الصادر عن بنك الكويت المركزي الإصدار 1.0", "url": "https://www.cbk.gov.kw/en/images/corf-170113_v10_tcm10-170113.pdf", "use": { "en": "The register itself: baselines, domains, sub-domains, control areas, control ids and page numbers", "ar": "السجل نفسه من الضوابط الأساسية والمجالات والمجالات الفرعية ومجالات الضوابط ومعرفات الضوابط وأرقام الصفحات" } },
+    { "id": "cbk", "en": "Central Bank of Kuwait", "ar": "بنك الكويت المركزي", "url": "https://www.cbk.gov.kw/", "use": { "en": "The issuing regulator and the home of the official document", "ar": "الجهة التنظيمية المصدرة وموطن الوثيقة الرسمية" } },
+    { "id": "iso", "en": "ISO/IEC 27001 (2022)", "ar": "ISO/IEC 27001 إصدار 2022", "url": "https://www.iso.org/standard/27001", "use": { "en": "Annex A control identifiers for the crosswalk", "ar": "معرفات ضوابط الملحق A للمقابلة" } },
+    { "id": "pci", "en": "PCI DSS v4.0.1 from the PCI Security Standards Council", "ar": "PCI DSS الإصدار 4.0.1 من مجلس معايير أمن صناعة بطاقات الدفع", "url": "https://www.pcisecuritystandards.org/document_library/", "use": { "en": "Requirement and requirement group identifiers for the crosswalk", "ar": "معرفات المتطلبات ومجموعاتها للمقابلة" } },
+    { "id": "swift", "en": "Swift Customer Security Programme and CSCF v2026", "ar": "برنامج أمن العملاء من Swift وإطار CSCF إصدار 2026", "url": "https://www.swift.com/myswift/customer-security-programme-csp", "use": { "en": "Control identifiers, objectives, principles and the mandatory or advisory status", "ar": "معرفات الضوابط والأهداف والمبادئ وصفة الإلزام أو الاستشارة" } }
+  ],
+  "note": {
+    "en": "Sadu does not copy the wording of the Central Bank of Kuwait, PCI SSC, Swift or ISO. Control identifiers, structural titles and page numbers follow the official CBK English document. The summaries, the Arabic text and the crosswalk are this project's own work and are kept apart from the official text. Sadu is independent and is not affiliated with or endorsed by any of these bodies. The CBK document's own summary states 200 control areas and 876 controls while its body enumerates 199 and 875, and the register follows the body.",
+    "ar": "لا ينقل سدو صياغة بنك الكويت المركزي أو PCI SSC أو Swift أو ISO حيث تستند معرفات الضوابط والعناوين الهيكلية وأرقام الصفحات إلى وثيقة البنك الرسمية بالإنجليزية أما الملخصات والنص العربي والمقابلة فهي عمل خاص بهذا المشروع ومفصولة عن النص الرسمي وسدو أداة مستقلة لا ترتبط بأي من هذه الجهات ولا تحظى باعتمادها ويذكر ملخص وثيقة البنك 200 مجال ضوابط و876 ضابطًا بينما يعدد متنها 199 و875 ويتبع السجل المتن."
+  }
+}

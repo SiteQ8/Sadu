@@ -1,0 +1,13 @@
+{
+  "schema": "sadu/1",
+  "name_en": "Sadu",
+  "name_ar": "سدو",
+  "repo": "Sadu",
+  "slug": "sadu",
+  "domain": "sadu.3li.info",
+  "owner": "SiteQ8",
+  "author": "Ali AlEnezi",
+  "version": "1.0.0",
+  "tagline_en": "A working register for the CBK Cyber and Operational Resilience Framework, woven to ISO 27001, PCI DSS and SWIFT CSCF",
+  "tagline_ar": "سجل عمل لإطار المرونة السيبرانية والتشغيلية الصادر عن بنك الكويت المركزي منسوج مع ISO 27001 و PCI DSS و SWIFT CSCF"
+}

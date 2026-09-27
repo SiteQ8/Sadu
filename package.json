@@ -1,0 +1,23 @@
+{
+  "name": "sadu",
+  "version": "1.0.0",
+  "description": "Sadu: a bilingual working register for the CBK Cyber and Operational Resilience Framework (CORF v1.0) woven to ISO 27001, PCI DSS v4.0.1 and SWIFT CSCF v2026, with an MCP server",
+  "type": "module",
+  "bin": { "sadu": "mcp/server.mjs" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "test": "node --test test/data.test.mjs test/engine.test.mjs test/mcp.test.mjs test/site.test.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "mcp": "node mcp/server.mjs",
+    "selftest": "node mcp/server.mjs --selftest",
+    "start": "node mcp/server.mjs"
+  },
+  "files": ["mcp/", "docs/assets/core.js", "docs/data/bundle.json", "README.md", "LICENSE", "NOTICE.md"],
+  "engines": { "node": ">=18" },
+  "author": "Ali AlEnezi",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/SiteQ8/Sadu.git" },
+  "homepage": "https://sadu.3li.info",
+  "keywords": ["cbk", "corf", "kuwait", "cyber-resilience", "operational-resilience", "third-party-risk", "compliance", "iso27001", "pci-dss", "swift-cscf", "crosswalk", "mcp", "mcp-server", "arabic", "bilingual"]
+}
