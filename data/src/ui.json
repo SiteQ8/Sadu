@@ -1,0 +1,470 @@
+{
+ "app.title": {
+  "en": "Sadu",
+  "ar": "سدو"
+ },
+ "app.tagline": {
+  "en": "A working register for the CBK Cyber and Operational Resilience Framework, woven to ISO 27001, PCI DSS and SWIFT CSCF",
+  "ar": "سجل عمل لإطار المرونة السيبرانية والتشغيلية الصادر عن بنك الكويت المركزي منسوج مع ISO 27001 و PCI DSS و SWIFT CSCF"
+ },
+ "mast.source": {
+  "en": "CORF Version 1.0 of 3 December 2025 with 27 domains and 875 controls across three baselines. Everything runs in your browser and nothing leaves your device.",
+  "ar": "الإصدار 1.0 من CORF الصادر في 3 ديسمبر 2025 بواقع 27 مجالًا و875 ضابطًا عبر ثلاثة أسس وكل شيء يعمل في متصفحك ولا يغادر جهازك."
+ },
+ "lang.switch": {
+  "en": "العربية",
+  "ar": "English"
+ },
+ "lang.switchLabel": {
+  "en": "Switch to Arabic",
+  "ar": "التبديل إلى الإنجليزية"
+ },
+ "theme.toLight": {
+  "en": "Light",
+  "ar": "فاتح"
+ },
+ "theme.toDark": {
+  "en": "Dark",
+  "ar": "داكن"
+ },
+ "theme.label": {
+  "en": "Switch theme",
+  "ar": "تبديل السمة"
+ },
+ "skip": {
+  "en": "Skip to content",
+  "ar": "الانتقال إلى المحتوى"
+ },
+ "tabs.label": {
+  "en": "Sections",
+  "ar": "الأقسام"
+ },
+ "tab.register": {
+  "en": "Register",
+  "ar": "السجل"
+ },
+ "tab.soa": {
+  "en": "Applicability",
+  "ar": "قابلية التطبيق"
+ },
+ "tab.crosswalk": {
+  "en": "Crosswalk",
+  "ar": "المقابلة"
+ },
+ "tab.frameworks": {
+  "en": "References",
+  "ar": "المراجع"
+ },
+ "tab.report": {
+  "en": "Report",
+  "ar": "التقرير"
+ },
+ "tab.about": {
+  "en": "About",
+  "ar": "عن الأداة"
+ },
+ "status.implemented": {
+  "en": "Implemented",
+  "ar": "مطبّق"
+ },
+ "status.partial": {
+  "en": "Partially implemented",
+  "ar": "مطبّق جزئيًا"
+ },
+ "status.notimplemented": {
+  "en": "Not implemented",
+  "ar": "غير مطبّق"
+ },
+ "status.notapplicable": {
+  "en": "Not applicable",
+  "ar": "غير منطبق"
+ },
+ "status.unset": {
+  "en": "Not assessed",
+  "ar": "لم يُقيَّم"
+ },
+ "maturity.title": {
+  "en": "Maturity",
+  "ar": "النضج"
+ },
+ "maturity.hint": {
+  "en": "CBK assesses each sub-domain on a five level maturity scale",
+  "ar": "يقيّم بنك الكويت المركزي كل مجال فرعي على مقياس نضج من خمسة مستويات"
+ },
+ "maturity.unset": {
+  "en": "Not rated",
+  "ar": "غير مقيَّم"
+ },
+ "maturity.1": {
+  "en": "Initial",
+  "ar": "مبدئي"
+ },
+ "maturity.2": {
+  "en": "Ad hoc",
+  "ar": "غير منتظم"
+ },
+ "maturity.3": {
+  "en": "Baseline",
+  "ar": "أساسي"
+ },
+ "maturity.4": {
+  "en": "Advanced",
+  "ar": "متقدم"
+ },
+ "maturity.5": {
+  "en": "Innovative",
+  "ar": "مبتكر"
+ },
+ "readiness.title": {
+  "en": "Readiness",
+  "ar": "الجاهزية"
+ },
+ "readiness.overall": {
+  "en": "Overall readiness",
+  "ar": "الجاهزية الإجمالية"
+ },
+ "readiness.byBaseline": {
+  "en": "Readiness by baseline",
+  "ar": "الجاهزية بحسب الأساس"
+ },
+ "readiness.byDomain": {
+  "en": "Readiness by domain",
+  "ar": "الجاهزية بحسب المجال"
+ },
+ "readiness.assessed": {
+  "en": "{n} of {total} controls assessed",
+  "ar": "قُيّم {n} من {total} ضابطًا"
+ },
+ "readiness.maturityAvg": {
+  "en": "Average maturity",
+  "ar": "متوسط النضج"
+ },
+ "band.initial": {
+  "en": "Initial",
+  "ar": "مبدئي"
+ },
+ "band.developing": {
+  "en": "Developing",
+  "ar": "قيد التطوير"
+ },
+ "band.defined": {
+  "en": "Defined",
+  "ar": "محدّد"
+ },
+ "band.managed": {
+  "en": "Managed",
+  "ar": "مُدار"
+ },
+ "register.title": {
+  "en": "The register",
+  "ar": "السجل"
+ },
+ "register.intro": {
+  "en": "Pick a baseline and work down through domains and sub-domains. Set a status on each control, rate each sub-domain's maturity and add notes. Readiness rolls up as you go.",
+  "ar": "اختر أساسًا ثم انتقل عبر المجالات والمجالات الفرعية وحدد حالة كل ضابط وقيّم نضج كل مجال فرعي وأضف ملاحظاتك فتتجمع الجاهزية تلقائيًا."
+ },
+ "register.baseline": {
+  "en": "Baseline",
+  "ar": "الأساس"
+ },
+ "register.domain": {
+  "en": "Domain",
+  "ar": "المجال"
+ },
+ "register.subdomain": {
+  "en": "Sub-domain",
+  "ar": "المجال الفرعي"
+ },
+ "register.area": {
+  "en": "Control area",
+  "ar": "مجال الضوابط"
+ },
+ "register.controls": {
+  "en": "controls",
+  "ar": "ضابطًا"
+ },
+ "register.page": {
+  "en": "Page {p} of the CBK document",
+  "ar": "الصفحة {p} من وثيقة البنك"
+ },
+ "register.controlsIn": {
+  "en": "Controls in this area",
+  "ar": "الضوابط في هذا المجال"
+ },
+ "register.setAll": {
+  "en": "Set all in this area",
+  "ar": "تحديد الكل في هذا المجال"
+ },
+ "search.label": {
+  "en": "Search the register",
+  "ar": "البحث في السجل"
+ },
+ "search.placeholder": {
+  "en": "Search by id or words in English or Arabic",
+  "ar": "ابحث بالمعرف أو بكلمات بالعربية أو الإنجليزية"
+ },
+ "filter.all": {
+  "en": "All",
+  "ar": "الكل"
+ },
+ "filter.implemented": {
+  "en": "Implemented",
+  "ar": "مطبّق"
+ },
+ "filter.partial": {
+  "en": "Partial",
+  "ar": "جزئي"
+ },
+ "filter.gap": {
+  "en": "Gaps",
+  "ar": "الفجوات"
+ },
+ "filter.na": {
+  "en": "Not applicable",
+  "ar": "غير منطبق"
+ },
+ "filter.unset": {
+  "en": "Not assessed",
+  "ar": "لم يُقيَّم"
+ },
+ "note.add": {
+  "en": "Note",
+  "ar": "ملاحظة"
+ },
+ "note.placeholder": {
+  "en": "Evidence, owner or a reminder",
+  "ar": "الدليل أو المسؤول أو تذكير"
+ },
+ "soa.title": {
+  "en": "Statement of applicability",
+  "ar": "بيان قابلية التطبيق"
+ },
+ "soa.intro": {
+  "en": "Every regulated entity submits a statement of applicability to CBK ahead of assessment. Mark each sub-domain applicable or not and record the justification for any exclusion.",
+  "ar": "تقدم كل جهة خاضعة للرقابة بيان قابلية التطبيق إلى بنك الكويت المركزي قبل التقييم فحدد لكل مجال فرعي ما إذا كان منطبقًا وسجل مبرر أي استبعاد."
+ },
+ "soa.applicable": {
+  "en": "Applicable",
+  "ar": "منطبق"
+ },
+ "soa.notApplicable": {
+  "en": "Not applicable",
+  "ar": "غير منطبق"
+ },
+ "soa.justification": {
+  "en": "Justification for exclusion",
+  "ar": "مبرر الاستبعاد"
+ },
+ "soa.justificationPlaceholder": {
+  "en": "Why this sub-domain does not apply",
+  "ar": "سبب عدم انطباق هذا المجال الفرعي"
+ },
+ "soa.count": {
+  "en": "{a} applicable and {n} not applicable of {t} sub-domains",
+  "ar": "{a} منطبقًا و{n} غير منطبق من {t} مجالًا فرعيًا"
+ },
+ "cw.title": {
+  "en": "Crosswalk",
+  "ar": "المقابلة"
+ },
+ "cw.intro": {
+  "en": "Every CORF control area is woven to ISO 27001, PCI DSS and SWIFT CSCF. Start from a CORF area or look up any reference in the other direction.",
+  "ar": "يُنسج كل مجال ضوابط في CORF مع ISO 27001 و PCI DSS و SWIFT CSCF فابدأ من مجال في CORF أو ابحث عن أي مرجع في الاتجاه المعاكس."
+ },
+ "cw.iso": {
+  "en": "ISO 27001",
+  "ar": "ISO 27001"
+ },
+ "cw.pci": {
+  "en": "PCI DSS",
+  "ar": "PCI DSS"
+ },
+ "cw.swift": {
+  "en": "SWIFT CSCF",
+  "ar": "SWIFT CSCF"
+ },
+ "cw.reverse": {
+  "en": "Reverse lookup",
+  "ar": "البحث العكسي"
+ },
+ "cw.reverseIntro": {
+  "en": "Pick a framework and a reference to see which CORF areas map to it and what the other frameworks say about the same ground.",
+  "ar": "اختر إطارًا ومرجعًا لترى مجالات CORF المقابلة له وما تقوله الأطر الأخرى عن الموضع نفسه."
+ },
+ "cw.pick": {
+  "en": "Choose a reference",
+  "ar": "اختر مرجعًا"
+ },
+ "cw.derived": {
+  "en": "Derived through CORF",
+  "ar": "مشتق عبر CORF"
+ },
+ "cw.none": {
+  "en": "No mapping",
+  "ar": "لا توجد مقابلة"
+ },
+ "cw.areas": {
+  "en": "CORF areas",
+  "ar": "مجالات CORF"
+ },
+ "fw.title": {
+  "en": "The references",
+  "ar": "المراجع"
+ },
+ "fw.intro": {
+  "en": "The three frameworks the register is woven to, listed by identifier with a short description in this project's own words.",
+  "ar": "الأطر الثلاثة المنسوجة مع السجل مرتبة بالمعرف مع وصف قصير بعبارات هذا المشروع."
+ },
+ "fw.mandatory": {
+  "en": "Mandatory",
+  "ar": "إلزامي"
+ },
+ "fw.advisory": {
+  "en": "Advisory",
+  "ar": "استشاري"
+ },
+ "fw.mappedTo": {
+  "en": "Mapped from {n} CORF areas",
+  "ar": "مقابل من {n} مجالًا في CORF"
+ },
+ "report.title": {
+  "en": "Readiness report",
+  "ar": "تقرير الجاهزية"
+ },
+ "report.intro": {
+  "en": "Overall and per baseline readiness with maturity, status counts and the largest gaps. Export the assessment to keep it or to share it with your assessor.",
+  "ar": "الجاهزية الإجمالية ولكل أساس مع النضج وأعداد الحالات وأكبر الفجوات كما يمكنك تصدير التقييم للاحتفاظ به أو لمشاركته مع المقيّم."
+ },
+ "report.export": {
+  "en": "Export assessment",
+  "ar": "تصدير التقييم"
+ },
+ "report.import": {
+  "en": "Import assessment",
+  "ar": "استيراد تقييم"
+ },
+ "report.print": {
+  "en": "Print report",
+  "ar": "طباعة التقرير"
+ },
+ "report.generated": {
+  "en": "Generated on {d}",
+  "ar": "أُنشئ في {d}"
+ },
+ "report.gaps": {
+  "en": "Largest gaps",
+  "ar": "أكبر الفجوات"
+ },
+ "report.gapsIntro": {
+  "en": "Control areas with the most controls not yet implemented",
+  "ar": "مجالات الضوابط التي تضم أكبر عدد من الضوابط غير المطبّقة"
+ },
+ "about.title": {
+  "en": "About Sadu",
+  "ar": "عن سدو"
+ },
+ "about.what": {
+  "en": "Sadu is a working register for the Cyber and Operational Resilience Framework issued by the Central Bank of Kuwait on 3 December 2025. It covers all three baselines, lets you set a status on every control and rate the maturity of every sub-domain the way CBK assesses, and weaves every control area to ISO 27001, PCI DSS and SWIFT CSCF.",
+  "ar": "سدو سجل عمل لإطار المرونة السيبرانية والتشغيلية الصادر عن بنك الكويت المركزي في 3 ديسمبر 2025 ويغطي الأسس الثلاثة كلها ويتيح لك تحديد حالة كل ضابط وتقييم نضج كل مجال فرعي كما يقيّم البنك وينسج كل مجال ضوابط مع ISO 27001 و PCI DSS و SWIFT CSCF."
+ },
+ "about.how": {
+  "en": "Implemented counts as full, partial as half and not applicable is set aside. Readiness rolls up from control area to sub-domain to domain to baseline and overall, and each sub-domain carries the maturity level you assign on the five level CBK scale.",
+  "ar": "يُحتسب المطبّق كاملًا والجزئي نصفًا ويُستبعد غير المنطبق وتتجمع الجاهزية من مجال الضوابط إلى المجال الفرعي ثم المجال ثم الأساس ثم الإجمالي ويحمل كل مجال فرعي مستوى النضج الذي تحدده على مقياس البنك ذي المستويات الخمسة."
+ },
+ "about.source": {
+  "en": "The framework belongs to the Central Bank of Kuwait. Identifiers, structural titles and page numbers follow the official document. The summaries, the Arabic text and the crosswalk are this project's own words, and the crosswalk is not an official mapping by any of the bodies involved.",
+  "ar": "الإطار ملك لبنك الكويت المركزي وتستند المعرفات والعناوين الهيكلية وأرقام الصفحات إلى الوثيقة الرسمية أما الملخصات والنص العربي والمقابلة فهي بعبارات هذا المشروع والمقابلة ليست مقابلة رسمية من أي من الجهات المعنية."
+ },
+ "about.disclaimer": {
+  "en": "Sadu is an independent open source tool for learning and self assessment. It is not affiliated with or endorsed by the Central Bank of Kuwait, PCI SSC, Swift or ISO and it is not a substitute for the official documents or for an independent assessment.",
+  "ar": "سدو أداة مستقلة مفتوحة المصدر للتعلم والتقييم الذاتي ولا ترتبط ببنك الكويت المركزي أو PCI SSC أو Swift أو ISO ولا تحظى باعتمادهم وليست بديلًا عن الوثائق الرسمية أو عن التقييم المستقل."
+ },
+ "about.nameTitle": {
+  "en": "About the name",
+  "ar": "عن الاسم"
+ },
+ "about.name": {
+  "en": "Sadu is the Kuwaiti weaving of the Bedouin loom, geometric bands of red, black and white worked from warp and weft. A crosswalk is the same craft: CORF is the warp and the international standards are the weft, woven into one cloth you can read at a glance.",
+  "ar": "السدو هو نسيج البادية الكويتي على النول بأشرطة هندسية حمراء وسوداء وبيضاء تُشغل من السدى واللحمة والمقابلة هي الحرفة نفسها فإطار CORF هو السدى والمعايير الدولية هي اللحمة تُنسج معًا في ثوب واحد تقرؤه بنظرة."
+ },
+ "about.mcp": {
+  "en": "Sadu ships an MCP server so an AI assistant can read the register, search it, follow the crosswalk in any direction and score a saved assessment with the same rules the site uses.",
+  "ar": "يأتي سدو مع خادم MCP حتى يستطيع مساعد ذكاء اصطناعي قراءة السجل والبحث فيه واتباع المقابلة في أي اتجاه وتقييم تقييم محفوظ بالقواعد نفسها التي يستخدمها الموقع."
+ },
+ "about.sources": {
+  "en": "Sources",
+  "ar": "المصادر"
+ },
+ "about.code": {
+  "en": "Source code",
+  "ar": "الشفرة المصدرية"
+ },
+ "footer.license": {
+  "en": "Open source under the MIT license",
+  "ar": "مفتوح المصدر بترخيص MIT"
+ },
+ "footer.version": {
+  "en": "Version {v}",
+  "ar": "الإصدار {v}"
+ },
+ "footer.framework": {
+  "en": "CBK CORF",
+  "ar": "إطار CORF"
+ },
+ "popup.title": {
+  "en": "Before you begin",
+  "ar": "قبل أن تبدأ"
+ },
+ "popup.body1": {
+  "en": "Sadu is an independent open source register. It is not affiliated with the Central Bank of Kuwait, PCI SSC, Swift or ISO and the crosswalk is this project's own analysis.",
+  "ar": "سدو سجل مستقل مفتوح المصدر لا يرتبط ببنك الكويت المركزي أو PCI SSC أو Swift أو ISO والمقابلة تحليل خاص بهذا المشروع."
+ },
+ "popup.body2": {
+  "en": "Your assessment stays in this browser. Export it if you want to keep it or move it.",
+  "ar": "يبقى تقييمك في هذا المتصفح فصدّره إذا أردت الاحتفاظ به أو نقله."
+ },
+ "popup.ack": {
+  "en": "Understood",
+  "ar": "فهمت"
+ },
+ "empty.search": {
+  "en": "Nothing matches",
+  "ar": "لا توجد نتائج"
+ },
+ "state.saved": {
+  "en": "Saved in this browser",
+  "ar": "محفوظ في هذا المتصفح"
+ },
+ "state.unsaved": {
+  "en": "Could not save in this browser",
+  "ar": "تعذر الحفظ في هذا المتصفح"
+ },
+ "action.reset": {
+  "en": "Reset assessment",
+  "ar": "إعادة ضبط التقييم"
+ },
+ "action.resetConfirm": {
+  "en": "Clear every status, maturity rating, applicability mark and note?",
+  "ar": "هل تريد مسح كل الحالات وتقييمات النضج وعلامات قابلية التطبيق والملاحظات؟"
+ },
+ "action.imported": {
+  "en": "Assessment imported",
+  "ar": "تم استيراد التقييم"
+ },
+ "action.importFailed": {
+  "en": "That file is not a Sadu assessment",
+  "ar": "هذا الملف ليس تقييمًا من سدو"
+ },
+ "source.line": {
+  "en": "Source",
+  "ar": "المصدر"
+ },
+ "col.band": {
+  "en": "Band",
+  "ar": "المستوى"
+ },
+ "col.assessed": {
+  "en": "Assessed",
+  "ar": "المقيَّم"
+ }
+}

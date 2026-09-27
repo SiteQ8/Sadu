@@ -1,0 +1,6464 @@
+{
+ "source": "CBK Cyber and Operational Resilience Framework v1.0 (3 Dec 2025), official PDF on cbk.gov.kw, 389 pages",
+ "baselines": [
+  {
+   "id": "crb",
+   "title_en": "Cyber Resilience Baselines",
+   "stated": {
+    "domains": 6,
+    "subdomains": 33,
+    "areas": 87,
+    "controls": 519
+   }
+  },
+  {
+   "id": "orb",
+   "title_en": "Operational Resilience Baselines",
+   "stated": {
+    "domains": 8,
+    "subdomains": 17,
+    "areas": 35,
+    "controls": 146
+   }
+  },
+  {
+   "id": "tprm",
+   "title_en": "Third-Party Risk Management Baselines",
+   "stated": {
+    "domains": 13,
+    "subdomains": 43,
+    "areas": 78,
+    "controls": 211
+   }
+  }
+ ],
+ "domains": [
+  {
+   "id": "crb:4",
+   "baseline": "crb",
+   "ref": "4",
+   "logical": 1,
+   "title_en": "Governance, Risk, and Compliance"
+  },
+  {
+   "id": "crb:5",
+   "baseline": "crb",
+   "ref": "5",
+   "logical": 2,
+   "title_en": "Technology and Operations"
+  },
+  {
+   "id": "crb:6",
+   "baseline": "crb",
+   "ref": "6",
+   "logical": 3,
+   "title_en": "Third-Party Risk Management and Supply Chain Management"
+  },
+  {
+   "id": "crb:7",
+   "baseline": "crb",
+   "ref": "7",
+   "logical": 4,
+   "title_en": "Emerging Technologies"
+  },
+  {
+   "id": "crb:8",
+   "baseline": "crb",
+   "ref": "8",
+   "logical": 5,
+   "title_en": "Payments Security"
+  },
+  {
+   "id": "crb:9",
+   "baseline": "crb",
+   "ref": "9",
+   "logical": 6,
+   "title_en": "Operational Resilience"
+  },
+  {
+   "id": "orb:3",
+   "baseline": "orb",
+   "ref": "3",
+   "logical": 1,
+   "title_en": "Governance and Oversight"
+  },
+  {
+   "id": "orb:4",
+   "baseline": "orb",
+   "ref": "4",
+   "logical": 2,
+   "title_en": "Risk and Threat Management"
+  },
+  {
+   "id": "orb:5",
+   "baseline": "orb",
+   "ref": "5",
+   "logical": 3,
+   "title_en": "Business Continuity Management"
+  },
+  {
+   "id": "orb:6",
+   "baseline": "orb",
+   "ref": "6",
+   "logical": 4,
+   "title_en": "Technology Resilience"
+  },
+  {
+   "id": "orb:7",
+   "baseline": "orb",
+   "ref": "7",
+   "logical": 5,
+   "title_en": "Third-Party Resilience"
+  },
+  {
+   "id": "orb:8",
+   "baseline": "orb",
+   "ref": "8",
+   "logical": 6,
+   "title_en": "Incident and Crisis Management"
+  },
+  {
+   "id": "orb:9",
+   "baseline": "orb",
+   "ref": "9",
+   "logical": 7,
+   "title_en": "Cyber Resilience"
+  },
+  {
+   "id": "orb:10",
+   "baseline": "orb",
+   "ref": "10",
+   "logical": 8,
+   "title_en": "Testing, Training, and Continuous Improvement"
+  },
+  {
+   "id": "tprm:3",
+   "baseline": "tprm",
+   "ref": "3",
+   "logical": 1,
+   "title_en": "Governance Structure and Oversight"
+  },
+  {
+   "id": "tprm:4",
+   "baseline": "tprm",
+   "ref": "4",
+   "logical": 2,
+   "title_en": "Risk Management Framework"
+  },
+  {
+   "id": "tprm:5",
+   "baseline": "tprm",
+   "ref": "5",
+   "logical": 3,
+   "title_en": "Contractual Agreements Considerations"
+  },
+  {
+   "id": "tprm:6",
+   "baseline": "tprm",
+   "ref": "6",
+   "logical": 4,
+   "title_en": "Risk Assessment and Monitoring"
+  },
+  {
+   "id": "tprm:7",
+   "baseline": "tprm",
+   "ref": "7",
+   "logical": 5,
+   "title_en": "Business Continuity Management and Disaster Recovery"
+  },
+  {
+   "id": "tprm:8",
+   "baseline": "tprm",
+   "ref": "8",
+   "logical": 6,
+   "title_en": "Incident Management"
+  },
+  {
+   "id": "tprm:9",
+   "baseline": "tprm",
+   "ref": "9",
+   "logical": 7,
+   "title_en": "Data Protection and Confidentiality"
+  },
+  {
+   "id": "tprm:10",
+   "baseline": "tprm",
+   "ref": "10",
+   "logical": 8,
+   "title_en": "Sub-Contracting"
+  },
+  {
+   "id": "tprm:11",
+   "baseline": "tprm",
+   "ref": "11",
+   "logical": 9,
+   "title_en": "Exit Strategy"
+  },
+  {
+   "id": "tprm:12",
+   "baseline": "tprm",
+   "ref": "12",
+   "logical": 10,
+   "title_en": "Storage of Data"
+  },
+  {
+   "id": "tprm:13",
+   "baseline": "tprm",
+   "ref": "13",
+   "logical": 11,
+   "title_en": "Cross-Border Transaction"
+  },
+  {
+   "id": "tprm:14",
+   "baseline": "tprm",
+   "ref": "14",
+   "logical": 12,
+   "title_en": "Usage of Cloud Services"
+  },
+  {
+   "id": "tprm:15",
+   "baseline": "tprm",
+   "ref": "15",
+   "logical": 13,
+   "title_en": "Inter-Affiliates"
+  }
+ ],
+ "subdomains": [
+  {
+   "id": "crb:4.1",
+   "baseline": "crb",
+   "domain": "crb:4",
+   "ref": "4.1",
+   "title_en": "Cybersecurity Governance and Oversight",
+   "page": 224
+  },
+  {
+   "id": "crb:4.2",
+   "baseline": "crb",
+   "domain": "crb:4",
+   "ref": "4.2",
+   "title_en": "Cybersecurity Risk Management",
+   "page": 231
+  },
+  {
+   "id": "crb:4.3",
+   "baseline": "crb",
+   "domain": "crb:4",
+   "ref": "4.3",
+   "title_en": "Compliance",
+   "page": 234
+  },
+  {
+   "id": "crb:4.4",
+   "baseline": "crb",
+   "domain": "crb:4",
+   "ref": "4.4",
+   "title_en": "Independent Audit",
+   "page": 235
+  },
+  {
+   "id": "crb:4.5",
+   "baseline": "crb",
+   "domain": "crb:4",
+   "ref": "4.5",
+   "title_en": "Workforce Management",
+   "page": 236
+  },
+  {
+   "id": "crb:5.1",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.1",
+   "title_en": "Security Architecture Design",
+   "page": 239
+  },
+  {
+   "id": "crb:5.2",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.2",
+   "title_en": "Asset Management",
+   "page": 240
+  },
+  {
+   "id": "crb:5.3",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.3",
+   "title_en": "Infrastructure and Network Security",
+   "page": 242
+  },
+  {
+   "id": "crb:5.4",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.4",
+   "title_en": "Endpoint and Device Security",
+   "page": 244
+  },
+  {
+   "id": "crb:5.5",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.5",
+   "title_en": "Email Security",
+   "page": 246
+  },
+  {
+   "id": "crb:5.6",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.6",
+   "title_en": "Identity and Access Management",
+   "page": 246
+  },
+  {
+   "id": "crb:5.7",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.7",
+   "title_en": "Cryptography",
+   "page": 250
+  },
+  {
+   "id": "crb:5.8",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.8",
+   "title_en": "Application Security and Secure SDLC",
+   "page": 250
+  },
+  {
+   "id": "crb:5.9",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.9",
+   "title_en": "Change and Release Management",
+   "page": 253
+  },
+  {
+   "id": "crb:5.10",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.10",
+   "title_en": "Capacity Management",
+   "page": 254
+  },
+  {
+   "id": "crb:5.11",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.11",
+   "title_en": "Data Protection and Privacy",
+   "page": 254
+  },
+  {
+   "id": "crb:5.12",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.12",
+   "title_en": "Logging, Monitoring, and Security Incident Management",
+   "page": 257
+  },
+  {
+   "id": "crb:5.13",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.13",
+   "title_en": "Cybersecurity Testing and Threat Management",
+   "page": 259
+  },
+  {
+   "id": "crb:5.14",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.14",
+   "title_en": "Physical and Environmental Security",
+   "page": 261
+  },
+  {
+   "id": "crb:5.15",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.15",
+   "title_en": "Cyber Threat Intelligence",
+   "page": 262
+  },
+  {
+   "id": "crb:5.16",
+   "baseline": "crb",
+   "domain": "crb:5",
+   "ref": "5.16",
+   "title_en": "Digital Risk Protection",
+   "page": 263
+  },
+  {
+   "id": "crb:6.1",
+   "baseline": "crb",
+   "domain": "crb:6",
+   "ref": "6.1",
+   "title_en": "Third-Party Risk Management (TPRM)",
+   "page": 265
+  },
+  {
+   "id": "crb:6.2",
+   "baseline": "crb",
+   "domain": "crb:6",
+   "ref": "6.2",
+   "title_en": "Supply Chain Management",
+   "page": 266
+  },
+  {
+   "id": "crb:7.1",
+   "baseline": "crb",
+   "domain": "crb:7",
+   "ref": "7.1",
+   "title_en": "Advanced Technologies Security",
+   "page": 268
+  },
+  {
+   "id": "crb:7.2",
+   "baseline": "crb",
+   "domain": "crb:7",
+   "ref": "7.2",
+   "title_en": "Cloud Security",
+   "page": 270
+  },
+  {
+   "id": "crb:8.1",
+   "baseline": "crb",
+   "domain": "crb:8",
+   "ref": "8.1",
+   "title_en": "Common Security Controls for Electronic Payment Systems",
+   "page": 273
+  },
+  {
+   "id": "crb:8.2",
+   "baseline": "crb",
+   "domain": "crb:8",
+   "ref": "8.2",
+   "title_en": "Electronic Payment Transaction Monitoring",
+   "page": 276
+  },
+  {
+   "id": "crb:8.3",
+   "baseline": "crb",
+   "domain": "crb:8",
+   "ref": "8.3",
+   "title_en": "Digital Banking Security",
+   "page": 278
+  },
+  {
+   "id": "crb:8.4",
+   "baseline": "crb",
+   "domain": "crb:8",
+   "ref": "8.4",
+   "title_en": "Payment Card Data Security",
+   "page": 281
+  },
+  {
+   "id": "crb:8.5",
+   "baseline": "crb",
+   "domain": "crb:8",
+   "ref": "8.5",
+   "title_en": "Security of Customer Self-Service Machines",
+   "page": 281
+  },
+  {
+   "id": "crb:8.6",
+   "baseline": "crb",
+   "domain": "crb:8",
+   "ref": "8.6",
+   "title_en": "Contactless Payment Technology Security",
+   "page": 282
+  },
+  {
+   "id": "crb:9.1",
+   "baseline": "crb",
+   "domain": "crb:9",
+   "ref": "9.1",
+   "title_en": "Business Continuity and Disaster Recovery (BC and DR)",
+   "page": 283
+  },
+  {
+   "id": "crb:9.2",
+   "baseline": "crb",
+   "domain": "crb:9",
+   "ref": "9.2",
+   "title_en": "Cyber Crisis Management",
+   "page": 285
+  },
+  {
+   "id": "orb:3.1",
+   "baseline": "orb",
+   "domain": "orb:3",
+   "ref": "3.1",
+   "title_en": "Operational Resilience Governance Structure and Oversight",
+   "page": 300
+  },
+  {
+   "id": "orb:3.2",
+   "baseline": "orb",
+   "domain": "orb:3",
+   "ref": "3.2",
+   "title_en": "Operational Resilience Policy and Strategy",
+   "page": 306
+  },
+  {
+   "id": "orb:3.3",
+   "baseline": "orb",
+   "domain": "orb:3",
+   "ref": "3.3",
+   "title_en": "Compliance",
+   "page": 308
+  },
+  {
+   "id": "orb:4.1",
+   "baseline": "orb",
+   "domain": "orb:4",
+   "ref": "4.1",
+   "title_en": "Risk Assessment Methodology",
+   "page": 309
+  },
+  {
+   "id": "orb:4.2",
+   "baseline": "orb",
+   "domain": "orb:4",
+   "ref": "4.2",
+   "title_en": "Risk Assessment Process",
+   "page": 309
+  },
+  {
+   "id": "orb:4.3",
+   "baseline": "orb",
+   "domain": "orb:4",
+   "ref": "4.3",
+   "title_en": "Risk Treatment and Reporting",
+   "page": 310
+  },
+  {
+   "id": "orb:5.1",
+   "baseline": "orb",
+   "domain": "orb:5",
+   "ref": "5.1",
+   "title_en": "Business Impact Analysis (BIA)",
+   "page": 311
+  },
+  {
+   "id": "orb:5.2",
+   "baseline": "orb",
+   "domain": "orb:5",
+   "ref": "5.2",
+   "title_en": "Recovery Strategies",
+   "page": 312
+  },
+  {
+   "id": "orb:5.3",
+   "baseline": "orb",
+   "domain": "orb:5",
+   "ref": "5.3",
+   "title_en": "Business Continuity Plans (BCP)",
+   "page": 313
+  },
+  {
+   "id": "orb:6.1",
+   "baseline": "orb",
+   "domain": "orb:6",
+   "ref": "6.1",
+   "title_en": "Service Management",
+   "page": 314
+  },
+  {
+   "id": "orb:6.2",
+   "baseline": "orb",
+   "domain": "orb:6",
+   "ref": "6.2",
+   "title_en": "Backup and Recovery Management",
+   "page": 314
+  },
+  {
+   "id": "orb:6.3",
+   "baseline": "orb",
+   "domain": "orb:6",
+   "ref": "6.3",
+   "title_en": "Technology Resilience Capabilities",
+   "page": 315
+  },
+  {
+   "id": "orb:6.4",
+   "baseline": "orb",
+   "domain": "orb:6",
+   "ref": "6.4",
+   "title_en": "Technology Recovery Plans",
+   "page": 315
+  },
+  {
+   "id": "orb:6.5",
+   "baseline": "orb",
+   "domain": "orb:6",
+   "ref": "6.5",
+   "title_en": "Cyber Recovery Plans",
+   "page": 316
+  },
+  {
+   "id": "orb:8.1",
+   "baseline": "orb",
+   "domain": "orb:8",
+   "ref": "8.1",
+   "title_en": "Incident and Crisis Management Governance and Planning",
+   "page": 319
+  },
+  {
+   "id": "orb:8.2",
+   "baseline": "orb",
+   "domain": "orb:8",
+   "ref": "8.2",
+   "title_en": "Communication and Escalation",
+   "page": 322
+  },
+  {
+   "id": "orb:10.1",
+   "baseline": "orb",
+   "domain": "orb:10",
+   "ref": "10.1",
+   "title_en": "Training, Testing and Exercising",
+   "page": 325
+  },
+  {
+   "id": "tprm:3.1",
+   "baseline": "tprm",
+   "domain": "tprm:3",
+   "ref": "3.1",
+   "title_en": "TPRM Policy and Strategy",
+   "page": 345
+  },
+  {
+   "id": "tprm:3.2",
+   "baseline": "tprm",
+   "domain": "tprm:3",
+   "ref": "3.2",
+   "title_en": "Roles and Responsibilities",
+   "page": 350
+  },
+  {
+   "id": "tprm:3.3",
+   "baseline": "tprm",
+   "domain": "tprm:3",
+   "ref": "3.3",
+   "title_en": "Board and Senior Management Oversight",
+   "page": 350
+  },
+  {
+   "id": "tprm:3.4",
+   "baseline": "tprm",
+   "domain": "tprm:3",
+   "ref": "3.4",
+   "title_en": "Approvals and Periodic Reviews",
+   "page": 353
+  },
+  {
+   "id": "tprm:4.1",
+   "baseline": "tprm",
+   "domain": "tprm:4",
+   "ref": "4.1",
+   "title_en": "Critical Third-Party Service Identification",
+   "page": 354
+  },
+  {
+   "id": "tprm:4.2",
+   "baseline": "tprm",
+   "domain": "tprm:4",
+   "ref": "4.2",
+   "title_en": "Risk Identification and Assessment Methodology",
+   "page": 354
+  },
+  {
+   "id": "tprm:4.3",
+   "baseline": "tprm",
+   "domain": "tprm:4",
+   "ref": "4.3",
+   "title_en": "Dependency Mapping to Critical Processes",
+   "page": 355
+  },
+  {
+   "id": "tprm:5.1",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.1",
+   "title_en": "Contractual Safeguards",
+   "page": 356
+  },
+  {
+   "id": "tprm:5.2",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.2",
+   "title_en": "Legal Binding Agreement",
+   "page": 356
+  },
+  {
+   "id": "tprm:5.3",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.3",
+   "title_en": "Regular Monitoring and Assessment",
+   "page": 357
+  },
+  {
+   "id": "tprm:5.4",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.4",
+   "title_en": "Health Safety & Environment",
+   "page": 358
+  },
+  {
+   "id": "tprm:5.5",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.5",
+   "title_en": "Financial Viability",
+   "page": 358
+  },
+  {
+   "id": "tprm:5.6",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.6",
+   "title_en": "Compliance (Geopolitics, Regulatory, Organizational, Country and Legal)",
+   "page": 359
+  },
+  {
+   "id": "tprm:5.7",
+   "baseline": "tprm",
+   "domain": "tprm:5",
+   "ref": "5.7",
+   "title_en": "Corporate Governance",
+   "page": 360
+  },
+  {
+   "id": "tprm:6.1",
+   "baseline": "tprm",
+   "domain": "tprm:6",
+   "ref": "6.1",
+   "title_en": "Identification, Assessment, and Mitigation",
+   "page": 361
+  },
+  {
+   "id": "tprm:6.2",
+   "baseline": "tprm",
+   "domain": "tprm:6",
+   "ref": "6.2",
+   "title_en": "Risk Classification",
+   "page": 361
+  },
+  {
+   "id": "tprm:6.3",
+   "baseline": "tprm",
+   "domain": "tprm:6",
+   "ref": "6.3",
+   "title_en": "Ongoing Monitoring of Critical Third Parties",
+   "page": 362
+  },
+  {
+   "id": "tprm:7.1",
+   "baseline": "tprm",
+   "domain": "tprm:7",
+   "ref": "7.1",
+   "title_en": "Business Continuity Plans",
+   "page": 363
+  },
+  {
+   "id": "tprm:7.2",
+   "baseline": "tprm",
+   "domain": "tprm:7",
+   "ref": "7.2",
+   "title_en": "Data Back up and Replication",
+   "page": 363
+  },
+  {
+   "id": "tprm:7.3",
+   "baseline": "tprm",
+   "domain": "tprm:7",
+   "ref": "7.3",
+   "title_en": "Periodic Testing of DR Capabilities",
+   "page": 364
+  },
+  {
+   "id": "tprm:7.4",
+   "baseline": "tprm",
+   "domain": "tprm:7",
+   "ref": "7.4",
+   "title_en": "Recovery and Restoration Procedures",
+   "page": 364
+  },
+  {
+   "id": "tprm:7.5",
+   "baseline": "tprm",
+   "domain": "tprm:7",
+   "ref": "7.5",
+   "title_en": "Business Continuity Management & Recovery",
+   "page": 365
+  },
+  {
+   "id": "tprm:8.1",
+   "baseline": "tprm",
+   "domain": "tprm:8",
+   "ref": "8.1",
+   "title_en": "Incident Detection and Monitoring",
+   "page": 366
+  },
+  {
+   "id": "tprm:8.2",
+   "baseline": "tprm",
+   "domain": "tprm:8",
+   "ref": "8.2",
+   "title_en": "Incident Escalation and Communication Protocols",
+   "page": 367
+  },
+  {
+   "id": "tprm:8.3",
+   "baseline": "tprm",
+   "domain": "tprm:8",
+   "ref": "8.3",
+   "title_en": "Root Cause Analysis",
+   "page": 368
+  },
+  {
+   "id": "tprm:9.1",
+   "baseline": "tprm",
+   "domain": "tprm:9",
+   "ref": "9.1",
+   "title_en": "Data Encryption and Masking",
+   "page": 370
+  },
+  {
+   "id": "tprm:9.2",
+   "baseline": "tprm",
+   "domain": "tprm:9",
+   "ref": "9.2",
+   "title_en": "Data Retention and Disposal",
+   "page": 371
+  },
+  {
+   "id": "tprm:9.3",
+   "baseline": "tprm",
+   "domain": "tprm:9",
+   "ref": "9.3",
+   "title_en": "Data Classification and Handling Policies",
+   "page": 372
+  },
+  {
+   "id": "tprm:10.1",
+   "baseline": "tprm",
+   "domain": "tprm:10",
+   "ref": "10.1",
+   "title_en": "Disclosure of Subcontractor and Approval from Regulated Entities",
+   "page": 374
+  },
+  {
+   "id": "tprm:10.2",
+   "baseline": "tprm",
+   "domain": "tprm:10",
+   "ref": "10.2",
+   "title_en": "Monitoring and Oversight",
+   "page": 374
+  },
+  {
+   "id": "tprm:11.1",
+   "baseline": "tprm",
+   "domain": "tprm:11",
+   "ref": "11.1",
+   "title_en": "Exit Strategy Planning",
+   "page": 375
+  },
+  {
+   "id": "tprm:12.1",
+   "baseline": "tprm",
+   "domain": "tprm:12",
+   "ref": "12.1",
+   "title_en": "Data Storage Security",
+   "page": 376
+  },
+  {
+   "id": "tprm:12.2",
+   "baseline": "tprm",
+   "domain": "tprm:12",
+   "ref": "12.2",
+   "title_en": "Storage Lifecycle Management",
+   "page": 376
+  },
+  {
+   "id": "tprm:12.3",
+   "baseline": "tprm",
+   "domain": "tprm:12",
+   "ref": "12.3",
+   "title_en": "Data Integrity and Availability",
+   "page": 377
+  },
+  {
+   "id": "tprm:13.1",
+   "baseline": "tprm",
+   "domain": "tprm:13",
+   "ref": "13.1",
+   "title_en": "Regulatory & Legal Compliance",
+   "page": 379
+  },
+  {
+   "id": "tprm:13.2",
+   "baseline": "tprm",
+   "domain": "tprm:13",
+   "ref": "13.2",
+   "title_en": "Due Diligence & KYC/AML",
+   "page": 379
+  },
+  {
+   "id": "tprm:13.3",
+   "baseline": "tprm",
+   "domain": "tprm:13",
+   "ref": "13.3",
+   "title_en": "Secure Data Transfers & Privacy",
+   "page": 380
+  },
+  {
+   "id": "tprm:13.4",
+   "baseline": "tprm",
+   "domain": "tprm:13",
+   "ref": "13.4",
+   "title_en": "Monitoring, Reporting & Audit",
+   "page": 380
+  },
+  {
+   "id": "tprm:14.1",
+   "baseline": "tprm",
+   "domain": "tprm:14",
+   "ref": "14.1",
+   "title_en": "Cloud Security",
+   "page": 381
+  },
+  {
+   "id": "tprm:15.1",
+   "baseline": "tprm",
+   "domain": "tprm:15",
+   "ref": "15.1",
+   "title_en": "Due Diligence and Periodic Review",
+   "page": 383
+  },
+  {
+   "id": "tprm:15.2",
+   "baseline": "tprm",
+   "domain": "tprm:15",
+   "ref": "15.2",
+   "title_en": "Customer Consent",
+   "page": 383
+  },
+  {
+   "id": "tprm:15.3",
+   "baseline": "tprm",
+   "domain": "tprm:15",
+   "ref": "15.3",
+   "title_en": "Foreign Affiliates",
+   "page": 383
+  },
+  {
+   "id": "tprm:15.4",
+   "baseline": "tprm",
+   "domain": "tprm:15",
+   "ref": "15.4",
+   "title_en": "Resource Planning",
+   "page": 383
+  }
+ ],
+ "areas": [
+  {
+   "id": "crb:4.1.1",
+   "baseline": "crb",
+   "subdomain": "crb:4.1",
+   "ref": "4.1.1",
+   "title_en": "Board of Directors",
+   "page": 224,
+   "controls": [
+    {
+     "id": "4.1.1.1",
+     "page": 224
+    },
+    {
+     "id": "4.1.1.2",
+     "page": 227
+    },
+    {
+     "id": "4.1.1.3",
+     "page": 227
+    },
+    {
+     "id": "4.1.1.4",
+     "page": 227
+    },
+    {
+     "id": "4.1.1.5",
+     "page": 227
+    }
+   ]
+  },
+  {
+   "id": "crb:4.1.2",
+   "baseline": "crb",
+   "subdomain": "crb:4.1",
+   "ref": "4.1.2",
+   "title_en": "Cybersecurity Steering Committee",
+   "page": 227,
+   "controls": [
+    {
+     "id": "4.1.2.1",
+     "page": 227
+    },
+    {
+     "id": "4.1.2.2",
+     "page": 227
+    },
+    {
+     "id": "4.1.2.3",
+     "page": 227
+    },
+    {
+     "id": "4.1.2.4",
+     "page": 228
+    },
+    {
+     "id": "4.1.2.5",
+     "page": 228
+    }
+   ]
+  },
+  {
+   "id": "crb:4.1.3",
+   "baseline": "crb",
+   "subdomain": "crb:4.1",
+   "ref": "4.1.3",
+   "title_en": "Executive/ Senior Management",
+   "page": 228,
+   "controls": [
+    {
+     "id": "4.1.3.1",
+     "page": 228
+    },
+    {
+     "id": "4.1.3.2",
+     "page": 228
+    },
+    {
+     "id": "4.1.3.3",
+     "page": 228
+    },
+    {
+     "id": "4.1.3.4",
+     "page": 228
+    },
+    {
+     "id": "4.1.3.5",
+     "page": 228
+    },
+    {
+     "id": "4.1.3.6",
+     "page": 228
+    },
+    {
+     "id": "4.1.3.7",
+     "page": 229
+    }
+   ]
+  },
+  {
+   "id": "crb:4.1.4",
+   "baseline": "crb",
+   "subdomain": "crb:4.1",
+   "ref": "4.1.4",
+   "title_en": "Information Security Function",
+   "page": 229,
+   "controls": [
+    {
+     "id": "4.1.4.1",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.2",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.3",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.4",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.5",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.6",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.7",
+     "page": 229
+    },
+    {
+     "id": "4.1.4.8",
+     "page": 229
+    }
+   ]
+  },
+  {
+   "id": "crb:4.1.5",
+   "baseline": "crb",
+   "subdomain": "crb:4.1",
+   "ref": "4.1.5",
+   "title_en": "Cybersecurity Strategy",
+   "page": 229,
+   "controls": [
+    {
+     "id": "4.1.5.1",
+     "page": 229
+    },
+    {
+     "id": "4.1.5.2",
+     "page": 230
+    },
+    {
+     "id": "4.1.5.3",
+     "page": 230
+    }
+   ]
+  },
+  {
+   "id": "crb:4.1.6",
+   "baseline": "crb",
+   "subdomain": "crb:4.1",
+   "ref": "4.1.6",
+   "title_en": "Cyber Resilience Policy",
+   "page": 230,
+   "controls": [
+    {
+     "id": "4.1.6.1",
+     "page": 230
+    },
+    {
+     "id": "4.1.6.2",
+     "page": 230
+    },
+    {
+     "id": "4.1.6.3",
+     "page": 230
+    },
+    {
+     "id": "4.1.6.4",
+     "page": 231
+    },
+    {
+     "id": "4.1.6.5",
+     "page": 231
+    },
+    {
+     "id": "4.1.6.6",
+     "page": 231
+    },
+    {
+     "id": "4.1.6.7",
+     "page": 231
+    }
+   ]
+  },
+  {
+   "id": "crb:4.2.1",
+   "baseline": "crb",
+   "subdomain": "crb:4.2",
+   "ref": "4.2.1",
+   "title_en": "Cybersecurity Risk Management Methodology",
+   "page": 231,
+   "controls": [
+    {
+     "id": "4.2.1.1",
+     "page": 231
+    },
+    {
+     "id": "4.2.1.2",
+     "page": 231
+    },
+    {
+     "id": "4.2.1.3",
+     "page": 231
+    },
+    {
+     "id": "4.2.1.4",
+     "page": 231
+    },
+    {
+     "id": "4.2.1.5",
+     "page": 231
+    }
+   ]
+  },
+  {
+   "id": "crb:4.2.2",
+   "baseline": "crb",
+   "subdomain": "crb:4.2",
+   "ref": "4.2.2",
+   "title_en": "Cybersecurity Risk Identification and Assessment",
+   "page": 232,
+   "controls": [
+    {
+     "id": "4.2.2.1",
+     "page": 232
+    },
+    {
+     "id": "4.2.2.2",
+     "page": 232
+    },
+    {
+     "id": "4.2.2.3",
+     "page": 232
+    },
+    {
+     "id": "4.2.2.4",
+     "page": 232
+    },
+    {
+     "id": "4.2.2.5",
+     "page": 232
+    },
+    {
+     "id": "4.2.2.6",
+     "page": 232
+    }
+   ]
+  },
+  {
+   "id": "crb:4.2.3",
+   "baseline": "crb",
+   "subdomain": "crb:4.2",
+   "ref": "4.2.3",
+   "title_en": "Cybersecurity Risk Treatment and Monitoring",
+   "page": 232,
+   "controls": [
+    {
+     "id": "4.2.3.1",
+     "page": 232
+    },
+    {
+     "id": "4.2.3.2",
+     "page": 233
+    },
+    {
+     "id": "4.2.3.3",
+     "page": 233
+    },
+    {
+     "id": "4.2.3.4",
+     "page": 233
+    }
+   ]
+  },
+  {
+   "id": "crb:4.2.4",
+   "baseline": "crb",
+   "subdomain": "crb:4.2",
+   "ref": "4.2.4",
+   "title_en": "Cyber Insurance",
+   "page": 233,
+   "controls": [
+    {
+     "id": "4.2.4.1",
+     "page": 233
+    },
+    {
+     "id": "4.2.4.2",
+     "page": 233
+    },
+    {
+     "id": "4.2.4.3",
+     "page": 233
+    }
+   ]
+  },
+  {
+   "id": "crb:4.2.5",
+   "baseline": "crb",
+   "subdomain": "crb:4.2",
+   "ref": "4.2.5",
+   "title_en": "Cybersecurity in Project Management",
+   "page": 233,
+   "controls": [
+    {
+     "id": "4.2.5.1",
+     "page": 233
+    },
+    {
+     "id": "4.2.5.2",
+     "page": 233
+    }
+   ]
+  },
+  {
+   "id": "crb:4.3.1",
+   "baseline": "crb",
+   "subdomain": "crb:4.3",
+   "ref": "4.3.1",
+   "title_en": "Regulatory, Statutory, and Standards Compliance",
+   "page": 234,
+   "controls": [
+    {
+     "id": "4.3.1.1",
+     "page": 234
+    },
+    {
+     "id": "4.3.1.2",
+     "page": 234
+    },
+    {
+     "id": "4.3.1.3",
+     "page": 234
+    },
+    {
+     "id": "4.3.1.4",
+     "page": 234
+    }
+   ]
+  },
+  {
+   "id": "crb:4.4.1",
+   "baseline": "crb",
+   "subdomain": "crb:4.4",
+   "ref": "4.4.1",
+   "title_en": "Audit Function of Regulated Entity",
+   "page": 235,
+   "controls": [
+    {
+     "id": "4.4.1.1",
+     "page": 235
+    }
+   ]
+  },
+  {
+   "id": "crb:4.4.2",
+   "baseline": "crb",
+   "subdomain": "crb:4.4",
+   "ref": "4.4.2",
+   "title_en": "Audit Planning and Execution",
+   "page": 235,
+   "controls": [
+    {
+     "id": "4.4.2.1",
+     "page": 235
+    },
+    {
+     "id": "4.4.2.2",
+     "page": 235
+    },
+    {
+     "id": "4.4.2.3",
+     "page": 235
+    }
+   ]
+  },
+  {
+   "id": "crb:4.4.3",
+   "baseline": "crb",
+   "subdomain": "crb:4.4",
+   "ref": "4.4.3",
+   "title_en": "Independent Third-Party Audits",
+   "page": 235,
+   "controls": [
+    {
+     "id": "4.4.3.1",
+     "page": 235
+    },
+    {
+     "id": "4.4.3.2",
+     "page": 235
+    }
+   ]
+  },
+  {
+   "id": "crb:4.4.4",
+   "baseline": "crb",
+   "subdomain": "crb:4.4",
+   "ref": "4.4.4",
+   "title_en": "Independent Audit Reporting",
+   "page": 235,
+   "controls": [
+    {
+     "id": "4.4.4.1",
+     "page": 235
+    },
+    {
+     "id": "4.4.4.2",
+     "page": 236
+    }
+   ]
+  },
+  {
+   "id": "crb:4.5.1",
+   "baseline": "crb",
+   "subdomain": "crb:4.5",
+   "ref": "4.5.1",
+   "title_en": "Personnel Security",
+   "page": 236,
+   "controls": [
+    {
+     "id": "4.5.1.1",
+     "page": 236
+    },
+    {
+     "id": "4.5.1.2",
+     "page": 236
+    },
+    {
+     "id": "4.5.1.3",
+     "page": 236
+    },
+    {
+     "id": "4.5.1.4",
+     "page": 236
+    },
+    {
+     "id": "4.5.1.5",
+     "page": 236
+    }
+   ]
+  },
+  {
+   "id": "crb:4.5.2",
+   "baseline": "crb",
+   "subdomain": "crb:4.5",
+   "ref": "4.5.2",
+   "title_en": "Training and Awareness",
+   "page": 236,
+   "controls": [
+    {
+     "id": "4.5.2.1",
+     "page": 236
+    },
+    {
+     "id": "4.5.2.2",
+     "page": 236
+    },
+    {
+     "id": "4.5.2.3",
+     "page": 236
+    },
+    {
+     "id": "4.5.2.4",
+     "page": 236
+    },
+    {
+     "id": "4.5.2.5",
+     "page": 237
+    },
+    {
+     "id": "4.5.2.6",
+     "page": 237
+    },
+    {
+     "id": "4.5.2.7",
+     "page": 237
+    },
+    {
+     "id": "4.5.2.8",
+     "page": 237
+    },
+    {
+     "id": "4.5.2.9",
+     "page": 237
+    },
+    {
+     "id": "4.5.2.10",
+     "page": 237
+    }
+   ]
+  },
+  {
+   "id": "crb:4.5.3",
+   "baseline": "crb",
+   "subdomain": "crb:4.5",
+   "ref": "4.5.3",
+   "title_en": "Talent Management",
+   "page": 237,
+   "controls": [
+    {
+     "id": "4.5.3.1",
+     "page": 237
+    },
+    {
+     "id": "4.5.3.2",
+     "page": 237
+    },
+    {
+     "id": "4.5.3.3",
+     "page": 237
+    },
+    {
+     "id": "4.5.3.4",
+     "page": 237
+    },
+    {
+     "id": "4.5.3.5",
+     "page": 238
+    },
+    {
+     "id": "4.5.3.6",
+     "page": 238
+    },
+    {
+     "id": "4.5.3.7",
+     "page": 238
+    },
+    {
+     "id": "4.5.3.8",
+     "page": 238
+    },
+    {
+     "id": "4.5.3.9",
+     "page": 238
+    },
+    {
+     "id": "4.5.3.10",
+     "page": 238
+    }
+   ]
+  },
+  {
+   "id": "crb:5.1.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.1",
+   "ref": "5.1.1",
+   "title_en": "Formalization and Governance",
+   "page": 239,
+   "controls": [
+    {
+     "id": "5.1.1.1",
+     "page": 239
+    },
+    {
+     "id": "5.1.1.2",
+     "page": 239
+    }
+   ]
+  },
+  {
+   "id": "crb:5.1.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.1",
+   "ref": "5.1.2",
+   "title_en": "Security Architecture Core Principles",
+   "page": 239,
+   "controls": [
+    {
+     "id": "5.1.2.1",
+     "page": 239
+    }
+   ]
+  },
+  {
+   "id": "crb:5.1.3",
+   "baseline": "crb",
+   "subdomain": "crb:5.1",
+   "ref": "5.1.3",
+   "title_en": "Security-by-Design Considerations",
+   "page": 239,
+   "controls": [
+    {
+     "id": "5.1.3.1",
+     "page": 239
+    }
+   ]
+  },
+  {
+   "id": "crb:5.2.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.2",
+   "ref": "5.2.1",
+   "title_en": "Asset Management Governance",
+   "page": 240,
+   "controls": [
+    {
+     "id": "5.2.1.1",
+     "page": 240
+    },
+    {
+     "id": "5.2.1.2",
+     "page": 240
+    },
+    {
+     "id": "5.2.1.3",
+     "page": 240
+    },
+    {
+     "id": "5.2.1.4",
+     "page": 240
+    },
+    {
+     "id": "5.2.1.5",
+     "page": 240
+    }
+   ]
+  },
+  {
+   "id": "crb:5.2.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.2",
+   "ref": "5.2.2",
+   "title_en": "Assets Identification",
+   "page": 240,
+   "controls": [
+    {
+     "id": "5.2.2.1",
+     "page": 240
+    },
+    {
+     "id": "5.2.2.2",
+     "page": 240
+    },
+    {
+     "id": "5.2.2.3",
+     "page": 240
+    },
+    {
+     "id": "5.2.2.4",
+     "page": 240
+    },
+    {
+     "id": "5.2.2.5",
+     "page": 241
+    },
+    {
+     "id": "5.2.2.6",
+     "page": 241
+    }
+   ]
+  },
+  {
+   "id": "crb:5.2.3",
+   "baseline": "crb",
+   "subdomain": "crb:5.2",
+   "ref": "5.2.3",
+   "title_en": "Assets Classification, Labelling, and Handling",
+   "page": 241,
+   "controls": [
+    {
+     "id": "5.2.3.1",
+     "page": 241
+    },
+    {
+     "id": "5.2.3.2",
+     "page": 241
+    },
+    {
+     "id": "5.2.3.3",
+     "page": 241
+    }
+   ]
+  },
+  {
+   "id": "crb:5.2.4",
+   "baseline": "crb",
+   "subdomain": "crb:5.2",
+   "ref": "5.2.4",
+   "title_en": "Acquisition, Acceptable Use, and Disposal of Assets",
+   "page": 241,
+   "controls": [
+    {
+     "id": "5.2.4.1",
+     "page": 241
+    },
+    {
+     "id": "5.2.4.2",
+     "page": 241
+    },
+    {
+     "id": "5.2.4.3",
+     "page": 241
+    },
+    {
+     "id": "5.2.4.4",
+     "page": 241
+    },
+    {
+     "id": "5.2.4.5",
+     "page": 241
+    },
+    {
+     "id": "5.2.4.6",
+     "page": 241
+    }
+   ]
+  },
+  {
+   "id": "crb:5.2.5",
+   "baseline": "crb",
+   "subdomain": "crb:5.2",
+   "ref": "5.2.5",
+   "title_en": "Detection and Monitoring of Unauthorized Assets",
+   "page": 241,
+   "controls": [
+    {
+     "id": "5.2.5.1",
+     "page": 241
+    },
+    {
+     "id": "5.2.5.2",
+     "page": 242
+    }
+   ]
+  },
+  {
+   "id": "crb:5.3.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.3",
+   "ref": "5.3.1",
+   "title_en": "Security Configuration Standards",
+   "page": 242,
+   "controls": [
+    {
+     "id": "5.3.1.1",
+     "page": 242
+    },
+    {
+     "id": "5.3.1.2",
+     "page": 242
+    },
+    {
+     "id": "5.3.1.3",
+     "page": 242
+    },
+    {
+     "id": "5.3.1.4",
+     "page": 242
+    },
+    {
+     "id": "5.3.1.5",
+     "page": 242
+    }
+   ]
+  },
+  {
+   "id": "crb:5.3.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.3",
+   "ref": "5.3.2",
+   "title_en": "Network Security",
+   "page": 243,
+   "controls": [
+    {
+     "id": "5.3.2.1",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.2",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.3",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.4",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.5",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.6",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.7",
+     "page": 243
+    },
+    {
+     "id": "5.3.2.8",
+     "page": 243
+    }
+   ]
+  },
+  {
+   "id": "crb:5.3.3",
+   "baseline": "crb",
+   "subdomain": "crb:5.3",
+   "ref": "5.3.3",
+   "title_en": "Network Connections and Application Interfaces",
+   "page": 243,
+   "controls": [
+    {
+     "id": "5.3.3.1",
+     "page": 243
+    },
+    {
+     "id": "5.3.3.2",
+     "page": 243
+    },
+    {
+     "id": "5.3.3.3",
+     "page": 243
+    },
+    {
+     "id": "5.3.3.4",
+     "page": 243
+    }
+   ]
+  },
+  {
+   "id": "crb:5.4.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.4",
+   "ref": "5.4.1",
+   "title_en": "Portable Device Security",
+   "page": 244,
+   "controls": [
+    {
+     "id": "5.4.1.1",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.2",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.3",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.4",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.5",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.6",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.7",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.8",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.9",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.10",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.11",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.12",
+     "page": 244
+    },
+    {
+     "id": "5.4.1.13",
+     "page": 245
+    },
+    {
+     "id": "5.4.1.14",
+     "page": 245
+    },
+    {
+     "id": "5.4.1.15",
+     "page": 245
+    },
+    {
+     "id": "5.4.1.16",
+     "page": 245
+    },
+    {
+     "id": "5.4.1.17",
+     "page": 245
+    },
+    {
+     "id": "5.4.1.18",
+     "page": 245
+    },
+    {
+     "id": "5.4.1.19",
+     "page": 245
+    }
+   ]
+  },
+  {
+   "id": "crb:5.4.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.4",
+   "ref": "5.4.2",
+   "title_en": "Removable Media",
+   "page": 245,
+   "controls": [
+    {
+     "id": "5.4.2.1",
+     "page": 245
+    },
+    {
+     "id": "5.4.2.2",
+     "page": 245
+    },
+    {
+     "id": "5.4.2.3",
+     "page": 245
+    },
+    {
+     "id": "5.4.2.4",
+     "page": 245
+    },
+    {
+     "id": "5.4.2.5",
+     "page": 245
+    },
+    {
+     "id": "5.4.2.6",
+     "page": 245
+    },
+    {
+     "id": "5.4.2.7",
+     "page": 245
+    }
+   ]
+  },
+  {
+   "id": "crb:5.5.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.5",
+   "ref": "5.5.1",
+   "title_en": "Email Usage",
+   "page": 246,
+   "controls": [
+    {
+     "id": "5.5.1.1",
+     "page": 246
+    },
+    {
+     "id": "5.5.1.2",
+     "page": 246
+    },
+    {
+     "id": "5.5.1.3",
+     "page": 246
+    }
+   ]
+  },
+  {
+   "id": "crb:5.5.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.5",
+   "ref": "5.5.2",
+   "title_en": "Email Security and Risk Mitigation",
+   "page": 246,
+   "controls": [
+    {
+     "id": "5.5.2.1",
+     "page": 246
+    },
+    {
+     "id": "5.5.2.2",
+     "page": 246
+    },
+    {
+     "id": "5.5.2.3",
+     "page": 246
+    },
+    {
+     "id": "5.5.2.4",
+     "page": 246
+    }
+   ]
+  },
+  {
+   "id": "crb:5.6.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.6",
+   "ref": "5.6.1",
+   "title_en": "Identity and Access Control Management",
+   "page": 246,
+   "controls": [
+    {
+     "id": "5.6.1.1",
+     "page": 246
+    },
+    {
+     "id": "5.6.1.2",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.3",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.4",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.5",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.6",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.7",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.8",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.9",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.10",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.11",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.12",
+     "page": 247
+    },
+    {
+     "id": "5.6.1.13",
+     "page": 248
+    },
+    {
+     "id": "5.6.1.14",
+     "page": 248
+    },
+    {
+     "id": "5.6.1.15",
+     "page": 248
+    },
+    {
+     "id": "5.6.1.16",
+     "page": 248
+    },
+    {
+     "id": "5.6.1.17",
+     "page": 248
+    }
+   ]
+  },
+  {
+   "id": "crb:5.6.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.6",
+   "ref": "5.6.2",
+   "title_en": "Remote Access Management",
+   "page": 248,
+   "controls": [
+    {
+     "id": "5.6.2.1",
+     "page": 248
+    },
+    {
+     "id": "5.6.2.2",
+     "page": 248
+    },
+    {
+     "id": "5.6.2.3",
+     "page": 248
+    },
+    {
+     "id": "5.6.2.4",
+     "page": 248
+    },
+    {
+     "id": "5.6.2.5",
+     "page": 248
+    },
+    {
+     "id": "5.6.2.6",
+     "page": 248
+    },
+    {
+     "id": "5.6.2.7",
+     "page": 249
+    },
+    {
+     "id": "5.6.2.8",
+     "page": 249
+    },
+    {
+     "id": "5.6.2.9",
+     "page": 249
+    },
+    {
+     "id": "5.6.2.10",
+     "page": 249
+    },
+    {
+     "id": "5.6.2.11",
+     "page": 249
+    }
+   ]
+  },
+  {
+   "id": "crb:5.6.3",
+   "baseline": "crb",
+   "subdomain": "crb:5.6",
+   "ref": "5.6.3",
+   "title_en": "Password Management",
+   "page": 249,
+   "controls": [
+    {
+     "id": "5.6.3.1",
+     "page": 249
+    },
+    {
+     "id": "5.6.3.2",
+     "page": 249
+    },
+    {
+     "id": "5.6.3.3",
+     "page": 249
+    },
+    {
+     "id": "5.6.3.4",
+     "page": 249
+    },
+    {
+     "id": "5.6.3.5",
+     "page": 249
+    },
+    {
+     "id": "5.6.3.6",
+     "page": 249
+    },
+    {
+     "id": "5.6.3.7",
+     "page": 249
+    }
+   ]
+  },
+  {
+   "id": "crb:5.7.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.7",
+   "ref": "5.7.1",
+   "title_en": "Cryptographic Controls and Key Management",
+   "page": 250,
+   "controls": [
+    {
+     "id": "5.7.1.1",
+     "page": 250
+    },
+    {
+     "id": "5.7.1.2",
+     "page": 250
+    },
+    {
+     "id": "5.7.1.3",
+     "page": 250
+    },
+    {
+     "id": "5.7.1.4",
+     "page": 250
+    },
+    {
+     "id": "5.7.1.5",
+     "page": 250
+    },
+    {
+     "id": "5.7.1.6",
+     "page": 250
+    }
+   ]
+  },
+  {
+   "id": "crb:5.8.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.8",
+   "ref": "5.8.1",
+   "title_en": "Secure Software Development Lifecycle (SDLC)",
+   "page": 250,
+   "controls": [
+    {
+     "id": "5.8.1.1",
+     "page": 250
+    },
+    {
+     "id": "5.8.1.2",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.3",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.4",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.5",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.6",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.7",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.8",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.9",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.10",
+     "page": 251
+    },
+    {
+     "id": "5.8.1.11",
+     "page": 251
+    }
+   ]
+  },
+  {
+   "id": "crb:5.8.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.8",
+   "ref": "5.8.2",
+   "title_en": "Application Security",
+   "page": 251,
+   "controls": [
+    {
+     "id": "5.8.2.1",
+     "page": 251
+    },
+    {
+     "id": "5.8.2.2",
+     "page": 251
+    },
+    {
+     "id": "5.8.2.3",
+     "page": 252
+    },
+    {
+     "id": "5.8.2.4",
+     "page": 252
+    }
+   ]
+  },
+  {
+   "id": "crb:5.8.3",
+   "baseline": "crb",
+   "subdomain": "crb:5.8",
+   "ref": "5.8.3",
+   "title_en": "Application Programming Interface (API) Security",
+   "page": 252,
+   "controls": [
+    {
+     "id": "5.8.3.1",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.2",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.3",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.4",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.5",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.6",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.7",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.8",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.9",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.10",
+     "page": 252
+    },
+    {
+     "id": "5.8.3.11",
+     "page": 253
+    },
+    {
+     "id": "5.8.3.12",
+     "page": 253
+    }
+   ]
+  },
+  {
+   "id": "crb:5.9.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.9",
+   "ref": "5.9.1",
+   "title_en": "Change and Release Management Process",
+   "page": 253,
+   "controls": [
+    {
+     "id": "5.9.1.1",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.2",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.3",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.4",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.5",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.6",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.7",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.8",
+     "page": 253
+    },
+    {
+     "id": "5.9.1.9",
+     "page": 254
+    }
+   ]
+  },
+  {
+   "id": "crb:5.10.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.10",
+   "ref": "5.10.1",
+   "title_en": "Capacity and Performance Management",
+   "page": 254,
+   "controls": [
+    {
+     "id": "5.10.1.1",
+     "page": 254
+    },
+    {
+     "id": "5.10.1.2",
+     "page": 254
+    },
+    {
+     "id": "5.10.1.3",
+     "page": 254
+    },
+    {
+     "id": "5.10.1.4",
+     "page": 254
+    },
+    {
+     "id": "5.10.1.5",
+     "page": 254
+    },
+    {
+     "id": "5.10.1.6",
+     "page": 254
+    }
+   ]
+  },
+  {
+   "id": "crb:5.11.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.11",
+   "ref": "5.11.1",
+   "title_en": "Data Protection",
+   "page": 254,
+   "controls": [
+    {
+     "id": "5.11.1.1",
+     "page": 254
+    },
+    {
+     "id": "5.11.1.2",
+     "page": 255
+    },
+    {
+     "id": "5.11.1.3",
+     "page": 255
+    },
+    {
+     "id": "5.11.1.4",
+     "page": 255
+    },
+    {
+     "id": "5.11.1.5",
+     "page": 255
+    },
+    {
+     "id": "5.11.1.6",
+     "page": 255
+    }
+   ]
+  },
+  {
+   "id": "crb:5.11.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.11",
+   "ref": "5.11.2",
+   "title_en": "Data Privacy",
+   "page": 255,
+   "controls": [
+    {
+     "id": "5.11.2.1",
+     "page": 255
+    },
+    {
+     "id": "5.11.2.2",
+     "page": 255
+    },
+    {
+     "id": "5.11.2.3",
+     "page": 255
+    },
+    {
+     "id": "5.11.2.4",
+     "page": 256
+    },
+    {
+     "id": "5.11.2.5",
+     "page": 256
+    },
+    {
+     "id": "5.11.2.6",
+     "page": 256
+    },
+    {
+     "id": "5.11.2.7",
+     "page": 257
+    }
+   ]
+  },
+  {
+   "id": "crb:5.12.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.12",
+   "ref": "5.12.1",
+   "title_en": "Logging and Monitoring",
+   "page": 257,
+   "controls": [
+    {
+     "id": "5.12.1.1",
+     "page": 257
+    },
+    {
+     "id": "5.12.1.2",
+     "page": 257
+    },
+    {
+     "id": "5.12.1.3",
+     "page": 257
+    },
+    {
+     "id": "5.12.1.4",
+     "page": 257
+    },
+    {
+     "id": "5.12.1.5",
+     "page": 257
+    },
+    {
+     "id": "5.12.1.6",
+     "page": 257
+    }
+   ]
+  },
+  {
+   "id": "crb:5.12.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.12",
+   "ref": "5.12.2",
+   "title_en": "Detection and Analysis",
+   "page": 257,
+   "controls": [
+    {
+     "id": "5.12.2.1",
+     "page": 257
+    },
+    {
+     "id": "5.12.2.2",
+     "page": 258
+    },
+    {
+     "id": "5.12.2.3",
+     "page": 258
+    },
+    {
+     "id": "5.12.2.4",
+     "page": 258
+    }
+   ]
+  },
+  {
+   "id": "crb:5.12.3",
+   "baseline": "crb",
+   "subdomain": "crb:5.12",
+   "ref": "5.12.3",
+   "title_en": "Response and Recovery",
+   "page": 258,
+   "controls": [
+    {
+     "id": "5.12.3.1",
+     "page": 258
+    },
+    {
+     "id": "5.12.3.2",
+     "page": 258
+    },
+    {
+     "id": "5.12.3.3",
+     "page": 258
+    },
+    {
+     "id": "5.12.3.4",
+     "page": 258
+    },
+    {
+     "id": "5.12.3.5",
+     "page": 258
+    }
+   ]
+  },
+  {
+   "id": "crb:5.12.4",
+   "baseline": "crb",
+   "subdomain": "crb:5.12",
+   "ref": "5.12.4",
+   "title_en": "Forensics and Evidence Collection",
+   "page": 258,
+   "controls": [
+    {
+     "id": "5.12.4.1",
+     "page": 258
+    },
+    {
+     "id": "5.12.4.2",
+     "page": 258
+    },
+    {
+     "id": "5.12.4.3",
+     "page": 258
+    },
+    {
+     "id": "5.12.4.4",
+     "page": 258
+    },
+    {
+     "id": "5.12.4.5",
+     "page": 258
+    },
+    {
+     "id": "5.12.4.6",
+     "page": 259
+    },
+    {
+     "id": "5.12.4.7",
+     "page": 259
+    },
+    {
+     "id": "5.12.4.8",
+     "page": 259
+    },
+    {
+     "id": "5.12.4.9",
+     "page": 259
+    },
+    {
+     "id": "5.12.4.10",
+     "page": 259
+    }
+   ]
+  },
+  {
+   "id": "crb:5.13.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.13",
+   "ref": "5.13.1",
+   "title_en": "Vulnerability Management",
+   "page": 259,
+   "controls": [
+    {
+     "id": "5.13.1.1",
+     "page": 259
+    },
+    {
+     "id": "5.13.1.2",
+     "page": 259
+    },
+    {
+     "id": "5.13.1.3",
+     "page": 259
+    },
+    {
+     "id": "5.13.1.4",
+     "page": 259
+    },
+    {
+     "id": "5.13.1.5",
+     "page": 260
+    },
+    {
+     "id": "5.13.1.6",
+     "page": 260
+    },
+    {
+     "id": "5.13.1.7",
+     "page": 260
+    },
+    {
+     "id": "5.13.1.8",
+     "page": 260
+    }
+   ]
+  },
+  {
+   "id": "crb:5.13.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.13",
+   "ref": "5.13.2",
+   "title_en": "Security Patch Management",
+   "page": 260,
+   "controls": [
+    {
+     "id": "5.13.2.1",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.2",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.3",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.4",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.5",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.6",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.7",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.8",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.9",
+     "page": 260
+    },
+    {
+     "id": "5.13.2.10",
+     "page": 261
+    },
+    {
+     "id": "5.13.2.11",
+     "page": 261
+    }
+   ]
+  },
+  {
+   "id": "crb:5.14.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.14",
+   "ref": "5.14.1",
+   "title_en": "Physical and Environmental Security Controls",
+   "page": 261,
+   "controls": [
+    {
+     "id": "5.14.1.1",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.2",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.3",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.4",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.5",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.6",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.7",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.8",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.9",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.10",
+     "page": 261
+    },
+    {
+     "id": "5.14.1.11",
+     "page": 262
+    },
+    {
+     "id": "5.14.1.12",
+     "page": 262
+    }
+   ]
+  },
+  {
+   "id": "crb:5.14.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.14",
+   "ref": "5.14.2",
+   "title_en": "Connected Devices (IoT/OT) Security",
+   "page": 262,
+   "controls": [
+    {
+     "id": "5.14.2.1",
+     "page": 262
+    },
+    {
+     "id": "5.14.2.2",
+     "page": 262
+    },
+    {
+     "id": "5.14.2.3",
+     "page": 262
+    },
+    {
+     "id": "5.14.2.4",
+     "page": 262
+    }
+   ]
+  },
+  {
+   "id": "crb:5.15.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.15",
+   "ref": "5.15.1",
+   "title_en": "Cyber Threat Intelligence (CTI) Management",
+   "page": 262,
+   "controls": [
+    {
+     "id": "5.15.1.1",
+     "page": 262
+    },
+    {
+     "id": "5.15.1.2",
+     "page": 262
+    },
+    {
+     "id": "5.15.1.3",
+     "page": 262
+    },
+    {
+     "id": "5.15.1.4",
+     "page": 262
+    }
+   ]
+  },
+  {
+   "id": "crb:5.15.2",
+   "baseline": "crb",
+   "subdomain": "crb:5.15",
+   "ref": "5.15.2",
+   "title_en": "CTI Collaboration and Continuous Improvement",
+   "page": 263,
+   "controls": [
+    {
+     "id": "5.15.2.1",
+     "page": 263
+    },
+    {
+     "id": "5.15.2.2",
+     "page": 263
+    },
+    {
+     "id": "5.15.2.3",
+     "page": 263
+    },
+    {
+     "id": "5.15.2.4",
+     "page": 263
+    },
+    {
+     "id": "5.15.2.5",
+     "page": 263
+    }
+   ]
+  },
+  {
+   "id": "crb:5.16.1",
+   "baseline": "crb",
+   "subdomain": "crb:5.16",
+   "ref": "5.16.1",
+   "title_en": "Digital Risk and Brand Protection",
+   "page": 263,
+   "controls": [
+    {
+     "id": "5.16.1.1",
+     "page": 263
+    },
+    {
+     "id": "5.16.1.2",
+     "page": 263
+    },
+    {
+     "id": "5.16.1.3",
+     "page": 264
+    },
+    {
+     "id": "5.16.1.4",
+     "page": 264
+    },
+    {
+     "id": "5.16.1.5",
+     "page": 264
+    },
+    {
+     "id": "5.16.1.6",
+     "page": 264
+    },
+    {
+     "id": "5.16.1.7",
+     "page": 264
+    }
+   ]
+  },
+  {
+   "id": "crb:6.1.1",
+   "baseline": "crb",
+   "subdomain": "crb:6.1",
+   "ref": "6.1.1",
+   "title_en": "Third-Party Risk Management",
+   "page": 265,
+   "controls": [
+    {
+     "id": "6.1.1.1",
+     "page": 265
+    },
+    {
+     "id": "6.1.1.2",
+     "page": 265
+    },
+    {
+     "id": "6.1.1.3",
+     "page": 265
+    },
+    {
+     "id": "6.1.1.4",
+     "page": 265
+    },
+    {
+     "id": "6.1.1.5",
+     "page": 265
+    },
+    {
+     "id": "6.1.1.6",
+     "page": 266
+    },
+    {
+     "id": "6.1.1.7",
+     "page": 266
+    },
+    {
+     "id": "6.1.1.8",
+     "page": 266
+    },
+    {
+     "id": "6.1.1.9",
+     "page": 266
+    },
+    {
+     "id": "6.1.1.10",
+     "page": 266
+    },
+    {
+     "id": "6.1.1.11",
+     "page": 266
+    },
+    {
+     "id": "6.1.1.12",
+     "page": 266
+    }
+   ]
+  },
+  {
+   "id": "crb:6.2.1",
+   "baseline": "crb",
+   "subdomain": "crb:6.2",
+   "ref": "6.2.1",
+   "title_en": "Supply Chain Risk Management",
+   "page": 266,
+   "controls": [
+    {
+     "id": "6.2.1.1",
+     "page": 266
+    },
+    {
+     "id": "6.2.1.2",
+     "page": 267
+    },
+    {
+     "id": "6.2.1.3",
+     "page": 267
+    },
+    {
+     "id": "6.2.1.4",
+     "page": 267
+    },
+    {
+     "id": "6.2.1.5",
+     "page": 267
+    }
+   ]
+  },
+  {
+   "id": "crb:7.1.1",
+   "baseline": "crb",
+   "subdomain": "crb:7.1",
+   "ref": "7.1.1",
+   "title_en": "General Security Requirements",
+   "page": 268,
+   "controls": [
+    {
+     "id": "7.1.1.1",
+     "page": 268
+    },
+    {
+     "id": "7.1.1.2",
+     "page": 268
+    },
+    {
+     "id": "7.1.1.3",
+     "page": 268
+    },
+    {
+     "id": "7.1.1.4",
+     "page": 268
+    },
+    {
+     "id": "7.1.1.5",
+     "page": 268
+    },
+    {
+     "id": "7.1.1.6",
+     "page": 268
+    },
+    {
+     "id": "7.1.1.7",
+     "page": 269
+    }
+   ]
+  },
+  {
+   "id": "crb:7.1.2",
+   "baseline": "crb",
+   "subdomain": "crb:7.1",
+   "ref": "7.1.2",
+   "title_en": "Artificial Intelligence (AI) and Machine Learning (ML) Security",
+   "page": 269,
+   "controls": [
+    {
+     "id": "7.1.2.1",
+     "page": 269
+    },
+    {
+     "id": "7.1.2.2",
+     "page": 269
+    },
+    {
+     "id": "7.1.2.3",
+     "page": 269
+    },
+    {
+     "id": "7.1.2.4",
+     "page": 269
+    },
+    {
+     "id": "7.1.2.5",
+     "page": 269
+    }
+   ]
+  },
+  {
+   "id": "crb:7.1.3",
+   "baseline": "crb",
+   "subdomain": "crb:7.1",
+   "ref": "7.1.3",
+   "title_en": "Blockchain and Distributed Ledger Technology (DLT) Security",
+   "page": 269,
+   "controls": [
+    {
+     "id": "7.1.3.1",
+     "page": 269
+    },
+    {
+     "id": "7.1.3.2",
+     "page": 269
+    },
+    {
+     "id": "7.1.3.3",
+     "page": 269
+    },
+    {
+     "id": "7.1.3.4",
+     "page": 269
+    },
+    {
+     "id": "7.1.3.5",
+     "page": 269
+    }
+   ]
+  },
+  {
+   "id": "crb:7.1.4",
+   "baseline": "crb",
+   "subdomain": "crb:7.1",
+   "ref": "7.1.4",
+   "title_en": "Other Emerging Technologies (Quantum Computing, 5G, etc.) Security",
+   "page": 269,
+   "controls": [
+    {
+     "id": "7.1.4.1",
+     "page": 269
+    },
+    {
+     "id": "7.1.4.2",
+     "page": 270
+    },
+    {
+     "id": "7.1.4.3",
+     "page": 270
+    },
+    {
+     "id": "7.1.4.4",
+     "page": 270
+    },
+    {
+     "id": "7.1.4.5",
+     "page": 270
+    },
+    {
+     "id": "7.1.4.6",
+     "page": 270
+    }
+   ]
+  },
+  {
+   "id": "crb:7.2.1",
+   "baseline": "crb",
+   "subdomain": "crb:7.2",
+   "ref": "7.2.1",
+   "title_en": "Cloud Governance",
+   "page": 270,
+   "controls": [
+    {
+     "id": "7.2.1.1",
+     "page": 270
+    },
+    {
+     "id": "7.2.1.2",
+     "page": 270
+    },
+    {
+     "id": "7.2.1.3",
+     "page": 270
+    },
+    {
+     "id": "7.2.1.4",
+     "page": 271
+    }
+   ]
+  },
+  {
+   "id": "crb:7.2.2",
+   "baseline": "crb",
+   "subdomain": "crb:7.2",
+   "ref": "7.2.2",
+   "title_en": "Cloud Risk Management",
+   "page": 271,
+   "controls": [
+    {
+     "id": "7.2.2.1",
+     "page": 271
+    },
+    {
+     "id": "7.2.2.2",
+     "page": 271
+    }
+   ]
+  },
+  {
+   "id": "crb:7.2.3",
+   "baseline": "crb",
+   "subdomain": "crb:7.2",
+   "ref": "7.2.3",
+   "title_en": "Cloud Providers Oversight and Agreements",
+   "page": 271,
+   "controls": [
+    {
+     "id": "7.2.3.1",
+     "page": 271
+    },
+    {
+     "id": "7.2.3.2",
+     "page": 271
+    },
+    {
+     "id": "7.2.3.3",
+     "page": 272
+    },
+    {
+     "id": "7.2.3.4",
+     "page": 272
+    }
+   ]
+  },
+  {
+   "id": "crb:7.2.4",
+   "baseline": "crb",
+   "subdomain": "crb:7.2",
+   "ref": "7.2.4",
+   "title_en": "Cloud Security Architecture and Compliance",
+   "page": 272,
+   "controls": [
+    {
+     "id": "7.2.4.1",
+     "page": 272
+    }
+   ]
+  },
+  {
+   "id": "crb:8.1.1",
+   "baseline": "crb",
+   "subdomain": "crb:8.1",
+   "ref": "8.1.1",
+   "title_en": "Policy and Governance",
+   "page": 273,
+   "controls": [
+    {
+     "id": "8.1.1.1",
+     "page": 273
+    },
+    {
+     "id": "8.1.1.2",
+     "page": 273
+    },
+    {
+     "id": "8.1.1.3",
+     "page": 273
+    }
+   ]
+  },
+  {
+   "id": "crb:8.1.2",
+   "baseline": "crb",
+   "subdomain": "crb:8.1",
+   "ref": "8.1.2",
+   "title_en": "Digital Onboarding",
+   "page": 273,
+   "controls": [
+    {
+     "id": "8.1.2.1",
+     "page": 273
+    },
+    {
+     "id": "8.1.2.2",
+     "page": 273
+    },
+    {
+     "id": "8.1.2.3",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.4",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.5",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.6",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.7",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.8",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.9",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.10",
+     "page": 274
+    },
+    {
+     "id": "8.1.2.11",
+     "page": 274
+    }
+   ]
+  },
+  {
+   "id": "crb:8.1.3",
+   "baseline": "crb",
+   "subdomain": "crb:8.1",
+   "ref": "8.1.3",
+   "title_en": "Authentication and Access Management",
+   "page": 274,
+   "controls": [
+    {
+     "id": "8.1.3.1",
+     "page": 274
+    },
+    {
+     "id": "8.1.3.2",
+     "page": 274
+    },
+    {
+     "id": "8.1.3.3",
+     "page": 275
+    },
+    {
+     "id": "8.1.3.4",
+     "page": 275
+    },
+    {
+     "id": "8.1.3.5",
+     "page": 275
+    },
+    {
+     "id": "8.1.3.6",
+     "page": 275
+    }
+   ]
+  },
+  {
+   "id": "crb:8.1.4",
+   "baseline": "crb",
+   "subdomain": "crb:8.1",
+   "ref": "8.1.4",
+   "title_en": "Transaction Security",
+   "page": 275,
+   "controls": [
+    {
+     "id": "8.1.4.1",
+     "page": 275
+    },
+    {
+     "id": "8.1.4.2",
+     "page": 275
+    },
+    {
+     "id": "8.1.4.3",
+     "page": 275
+    },
+    {
+     "id": "8.1.4.4",
+     "page": 275
+    },
+    {
+     "id": "8.1.4.5",
+     "page": 276
+    },
+    {
+     "id": "8.1.4.6",
+     "page": 276
+    },
+    {
+     "id": "8.1.4.7",
+     "page": 276
+    },
+    {
+     "id": "8.1.4.8",
+     "page": 276
+    }
+   ]
+  },
+  {
+   "id": "crb:8.2.1",
+   "baseline": "crb",
+   "subdomain": "crb:8.2",
+   "ref": "8.2.1",
+   "title_en": "E-Payment Transactions Monitoring and Control",
+   "page": 276,
+   "controls": [
+    {
+     "id": "8.2.1.1",
+     "page": 276
+    },
+    {
+     "id": "8.2.1.2",
+     "page": 276
+    },
+    {
+     "id": "8.2.1.3",
+     "page": 277
+    },
+    {
+     "id": "8.2.1.4",
+     "page": 277
+    },
+    {
+     "id": "8.2.1.5",
+     "page": 277
+    }
+   ]
+  },
+  {
+   "id": "crb:8.2.2",
+   "baseline": "crb",
+   "subdomain": "crb:8.2",
+   "ref": "8.2.2",
+   "title_en": "Fraud Management",
+   "page": 277,
+   "controls": [
+    {
+     "id": "8.2.2.1",
+     "page": 277
+    },
+    {
+     "id": "8.2.2.2",
+     "page": 277
+    },
+    {
+     "id": "8.2.2.3",
+     "page": 277
+    },
+    {
+     "id": "8.2.2.4",
+     "page": 277
+    },
+    {
+     "id": "8.2.2.5",
+     "page": 277
+    },
+    {
+     "id": "8.2.2.6",
+     "page": 277
+    },
+    {
+     "id": "8.2.2.7",
+     "page": 277
+    }
+   ]
+  },
+  {
+   "id": "crb:8.3.1",
+   "baseline": "crb",
+   "subdomain": "crb:8.3",
+   "ref": "8.3.1",
+   "title_en": "Online and Mobile Banking Security",
+   "page": 278,
+   "controls": [
+    {
+     "id": "8.3.1.1",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.2",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.3",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.4",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.5",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.6",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.7",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.8",
+     "page": 278
+    },
+    {
+     "id": "8.3.1.9",
+     "page": 279
+    },
+    {
+     "id": "8.3.1.10",
+     "page": 279
+    },
+    {
+     "id": "8.3.1.11",
+     "page": 279
+    },
+    {
+     "id": "8.3.1.12",
+     "page": 279
+    },
+    {
+     "id": "8.3.1.13",
+     "page": 279
+    },
+    {
+     "id": "8.3.1.14",
+     "page": 279
+    },
+    {
+     "id": "8.3.1.15",
+     "page": 279
+    }
+   ]
+  },
+  {
+   "id": "crb:8.3.2",
+   "baseline": "crb",
+   "subdomain": "crb:8.3",
+   "ref": "8.3.2",
+   "title_en": "Open Banking Security",
+   "page": 279,
+   "controls": [
+    {
+     "id": "8.3.2.1",
+     "page": 279
+    },
+    {
+     "id": "8.3.2.2",
+     "page": 279
+    },
+    {
+     "id": "8.3.2.3",
+     "page": 280
+    },
+    {
+     "id": "8.3.2.4",
+     "page": 280
+    },
+    {
+     "id": "8.3.2.5",
+     "page": 280
+    },
+    {
+     "id": "8.3.2.6",
+     "page": 280
+    },
+    {
+     "id": "8.3.2.7",
+     "page": 280
+    },
+    {
+     "id": "8.3.2.8",
+     "page": 280
+    },
+    {
+     "id": "8.3.2.9",
+     "page": 280
+    }
+   ]
+  },
+  {
+   "id": "crb:8.3.3",
+   "baseline": "crb",
+   "subdomain": "crb:8.3",
+   "ref": "8.3.3",
+   "title_en": "Digital Wallets Security",
+   "page": 280,
+   "controls": [
+    {
+     "id": "8.3.3.1",
+     "page": 280
+    },
+    {
+     "id": "8.3.3.2",
+     "page": 280
+    },
+    {
+     "id": "8.3.3.3",
+     "page": 280
+    },
+    {
+     "id": "8.3.3.4",
+     "page": 280
+    },
+    {
+     "id": "8.3.3.5",
+     "page": 280
+    },
+    {
+     "id": "8.3.3.6",
+     "page": 280
+    }
+   ]
+  },
+  {
+   "id": "crb:8.4.1",
+   "baseline": "crb",
+   "subdomain": "crb:8.4",
+   "ref": "8.4.1",
+   "title_en": "Payment Card Data Protection",
+   "page": 281,
+   "controls": [
+    {
+     "id": "8.4.1.1",
+     "page": 281
+    },
+    {
+     "id": "8.4.1.2",
+     "page": 281
+    },
+    {
+     "id": "8.4.1.3",
+     "page": 281
+    },
+    {
+     "id": "8.4.1.4",
+     "page": 281
+    }
+   ]
+  },
+  {
+   "id": "crb:8.5.1",
+   "baseline": "crb",
+   "subdomain": "crb:8.5",
+   "ref": "8.5.1",
+   "title_en": "Physical and Environmental Security of Customer Self-Service Machines",
+   "page": 281,
+   "controls": [
+    {
+     "id": "8.5.1.1",
+     "page": 281
+    },
+    {
+     "id": "8.5.1.2",
+     "page": 281
+    },
+    {
+     "id": "8.5.1.3",
+     "page": 281
+    }
+   ]
+  },
+  {
+   "id": "crb:8.5.2",
+   "baseline": "crb",
+   "subdomain": "crb:8.5",
+   "ref": "8.5.2",
+   "title_en": "Transaction and Customer Data Security",
+   "page": 281,
+   "controls": [
+    {
+     "id": "8.5.2.1",
+     "page": 281
+    },
+    {
+     "id": "8.5.2.2",
+     "page": 281
+    },
+    {
+     "id": "8.5.2.3",
+     "page": 281
+    }
+   ]
+  },
+  {
+   "id": "crb:8.6.1",
+   "baseline": "crb",
+   "subdomain": "crb:8.6",
+   "ref": "8.6.1",
+   "title_en": "Contactless Payment Security Controls",
+   "page": 282,
+   "controls": [
+    {
+     "id": "8.6.1.1",
+     "page": 282
+    },
+    {
+     "id": "8.6.1.2",
+     "page": 282
+    },
+    {
+     "id": "8.6.1.3",
+     "page": 282
+    }
+   ]
+  },
+  {
+   "id": "crb:9.1.1",
+   "baseline": "crb",
+   "subdomain": "crb:9.1",
+   "ref": "9.1.1",
+   "title_en": "Business Continuity and Disaster Recovery Planning and Management",
+   "page": 283,
+   "controls": [
+    {
+     "id": "9.1.1.1",
+     "page": 283
+    },
+    {
+     "id": "9.1.1.2",
+     "page": 283
+    },
+    {
+     "id": "9.1.1.3",
+     "page": 283
+    },
+    {
+     "id": "9.1.1.4",
+     "page": 283
+    },
+    {
+     "id": "9.1.1.5",
+     "page": 283
+    },
+    {
+     "id": "9.1.1.6",
+     "page": 283
+    }
+   ]
+  },
+  {
+   "id": "crb:9.1.2",
+   "baseline": "crb",
+   "subdomain": "crb:9.1",
+   "ref": "9.1.2",
+   "title_en": "Backup and Recovery Management",
+   "page": 283,
+   "controls": [
+    {
+     "id": "9.1.2.1",
+     "page": 283
+    },
+    {
+     "id": "9.1.2.2",
+     "page": 284
+    },
+    {
+     "id": "9.1.2.3",
+     "page": 284
+    }
+   ]
+  },
+  {
+   "id": "crb:9.1.3",
+   "baseline": "crb",
+   "subdomain": "crb:9.1",
+   "ref": "9.1.3",
+   "title_en": "Critical Services and Dependencies Management",
+   "page": 284,
+   "controls": [
+    {
+     "id": "9.1.3.1",
+     "page": 284
+    },
+    {
+     "id": "9.1.3.2",
+     "page": 284
+    },
+    {
+     "id": "9.1.3.3",
+     "page": 284
+    },
+    {
+     "id": "9.1.3.4",
+     "page": 284
+    },
+    {
+     "id": "9.1.3.5",
+     "page": 284
+    }
+   ]
+  },
+  {
+   "id": "crb:9.1.4",
+   "baseline": "crb",
+   "subdomain": "crb:9.1",
+   "ref": "9.1.4",
+   "title_en": "Testing and Validation",
+   "page": 284,
+   "controls": [
+    {
+     "id": "9.1.4.1",
+     "page": 284
+    },
+    {
+     "id": "9.1.4.2",
+     "page": 284
+    },
+    {
+     "id": "9.1.4.3",
+     "page": 284
+    },
+    {
+     "id": "9.1.4.4",
+     "page": 284
+    },
+    {
+     "id": "9.1.4.5",
+     "page": 284
+    },
+    {
+     "id": "9.1.4.6",
+     "page": 284
+    },
+    {
+     "id": "9.1.4.7",
+     "page": 285
+    },
+    {
+     "id": "9.1.4.8",
+     "page": 285
+    },
+    {
+     "id": "9.1.4.9",
+     "page": 285
+    },
+    {
+     "id": "9.1.4.10",
+     "page": 285
+    }
+   ]
+  },
+  {
+   "id": "crb:9.2.1",
+   "baseline": "crb",
+   "subdomain": "crb:9.2",
+   "ref": "9.2.1",
+   "title_en": "Crisis Management Planning and Governance",
+   "page": 285,
+   "controls": [
+    {
+     "id": "9.2.1.1",
+     "page": 285
+    },
+    {
+     "id": "9.2.1.2",
+     "page": 285
+    },
+    {
+     "id": "9.2.1.3",
+     "page": 285
+    },
+    {
+     "id": "9.2.1.4",
+     "page": 286
+    },
+    {
+     "id": "9.2.1.5",
+     "page": 286
+    },
+    {
+     "id": "9.2.1.6",
+     "page": 286
+    }
+   ]
+  },
+  {
+   "id": "crb:9.2.2",
+   "baseline": "crb",
+   "subdomain": "crb:9.2",
+   "ref": "9.2.2",
+   "title_en": "Crisis Response and Communication",
+   "page": 286,
+   "controls": [
+    {
+     "id": "9.2.2.1",
+     "page": 286
+    },
+    {
+     "id": "9.2.2.2",
+     "page": 286
+    },
+    {
+     "id": "9.2.2.3",
+     "page": 286
+    },
+    {
+     "id": "9.2.2.4",
+     "page": 286
+    },
+    {
+     "id": "9.2.2.5",
+     "page": 286
+    },
+    {
+     "id": "9.2.2.6",
+     "page": 286
+    },
+    {
+     "id": "9.2.2.7",
+     "page": 287
+    },
+    {
+     "id": "9.2.2.8",
+     "page": 287
+    }
+   ]
+  },
+  {
+   "id": "crb:9.2.3",
+   "baseline": "crb",
+   "subdomain": "crb:9.2",
+   "ref": "9.2.3",
+   "title_en": "Training, Testing, and Continuous Improvement",
+   "page": 287,
+   "controls": [
+    {
+     "id": "9.2.3.1",
+     "page": 287
+    },
+    {
+     "id": "9.2.3.2",
+     "page": 287
+    },
+    {
+     "id": "9.2.3.3",
+     "page": 287
+    },
+    {
+     "id": "9.2.3.4",
+     "page": 287
+    }
+   ]
+  },
+  {
+   "id": "orb:3.1.1",
+   "baseline": "orb",
+   "subdomain": "orb:3.1",
+   "ref": "3.1.1",
+   "title_en": "Board of Directors",
+   "page": 300,
+   "controls": [
+    {
+     "id": "3.1.1.1",
+     "page": 304
+    },
+    {
+     "id": "3.1.1.2",
+     "page": 304
+    },
+    {
+     "id": "3.1.1.3",
+     "page": 304
+    },
+    {
+     "id": "3.1.1.4",
+     "page": 304
+    },
+    {
+     "id": "3.1.1.5",
+     "page": 304
+    }
+   ]
+  },
+  {
+   "id": "orb:3.1.2",
+   "baseline": "orb",
+   "subdomain": "orb:3.1",
+   "ref": "3.1.2",
+   "title_en": "Operational Resilience Steering Committee",
+   "page": 304,
+   "controls": [
+    {
+     "id": "3.1.2.1",
+     "page": 304
+    },
+    {
+     "id": "3.1.2.2",
+     "page": 304
+    },
+    {
+     "id": "3.1.2.3",
+     "page": 304
+    },
+    {
+     "id": "3.1.2.4",
+     "page": 305
+    },
+    {
+     "id": "3.1.2.5",
+     "page": 305
+    }
+   ]
+  },
+  {
+   "id": "orb:3.1.3",
+   "baseline": "orb",
+   "subdomain": "orb:3.1",
+   "ref": "3.1.3",
+   "title_en": "Executive/Senior Management",
+   "page": 305,
+   "controls": [
+    {
+     "id": "3.1.3.1",
+     "page": 305
+    },
+    {
+     "id": "3.1.3.2",
+     "page": 305
+    },
+    {
+     "id": "3.1.3.3",
+     "page": 305
+    },
+    {
+     "id": "3.1.3.4",
+     "page": 305
+    },
+    {
+     "id": "3.1.3.5",
+     "page": 305
+    },
+    {
+     "id": "3.1.3.6",
+     "page": 305
+    }
+   ]
+  },
+  {
+   "id": "orb:3.1.4",
+   "baseline": "orb",
+   "subdomain": "orb:3.1",
+   "ref": "3.1.4",
+   "title_en": "Operational Resilience Function",
+   "page": 306,
+   "controls": [
+    {
+     "id": "3.1.4.1",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.2",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.3",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.4",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.5",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.6",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.7",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.8",
+     "page": 306
+    },
+    {
+     "id": "3.1.4.9",
+     "page": 306
+    }
+   ]
+  },
+  {
+   "id": "orb:3.2.1",
+   "baseline": "orb",
+   "subdomain": "orb:3.2",
+   "ref": "3.2.1",
+   "title_en": "Operational Resilience Strategy",
+   "page": 306,
+   "controls": [
+    {
+     "id": "3.2.1.1",
+     "page": 306
+    },
+    {
+     "id": "3.2.1.2",
+     "page": 307
+    },
+    {
+     "id": "3.2.1.3",
+     "page": 307
+    },
+    {
+     "id": "3.2.1.4",
+     "page": 307
+    },
+    {
+     "id": "3.2.1.5",
+     "page": 307
+    },
+    {
+     "id": "3.2.1.6",
+     "page": 307
+    },
+    {
+     "id": "3.2.1.7",
+     "page": 307
+    },
+    {
+     "id": "3.2.1.8",
+     "page": 307
+    }
+   ]
+  },
+  {
+   "id": "orb:3.3.1",
+   "baseline": "orb",
+   "subdomain": "orb:3.3",
+   "ref": "3.3.1",
+   "title_en": "Compliance",
+   "page": 308,
+   "controls": [
+    {
+     "id": "3.3.1.1",
+     "page": 308
+    },
+    {
+     "id": "3.3.1.2",
+     "page": 308
+    },
+    {
+     "id": "3.3.1.3",
+     "page": 308
+    }
+   ]
+  },
+  {
+   "id": "orb:4.1.1",
+   "baseline": "orb",
+   "subdomain": "orb:4.1",
+   "ref": "4.1.1",
+   "title_en": "Risk Assessment Methodology",
+   "page": 309,
+   "controls": [
+    {
+     "id": "4.1.1.1",
+     "page": 309
+    },
+    {
+     "id": "4.1.1.2",
+     "page": 309
+    },
+    {
+     "id": "4.1.1.3",
+     "page": 309
+    },
+    {
+     "id": "4.1.1.4",
+     "page": 309
+    }
+   ]
+  },
+  {
+   "id": "orb:4.2.1",
+   "baseline": "orb",
+   "subdomain": "orb:4.2",
+   "ref": "4.2.1",
+   "title_en": "Risk Identification and Analysis",
+   "page": 309,
+   "controls": [
+    {
+     "id": "4.2.1.1",
+     "page": 309
+    },
+    {
+     "id": "4.2.1.2",
+     "page": 309
+    },
+    {
+     "id": "4.2.1.3",
+     "page": 310
+    },
+    {
+     "id": "4.2.1.4",
+     "page": 310
+    }
+   ]
+  },
+  {
+   "id": "orb:4.3.1",
+   "baseline": "orb",
+   "subdomain": "orb:4.3",
+   "ref": "4.3.1",
+   "title_en": "Risk Treatment and Monitoring",
+   "page": 310,
+   "controls": [
+    {
+     "id": "4.3.1.1",
+     "page": 310
+    },
+    {
+     "id": "4.3.1.2",
+     "page": 310
+    },
+    {
+     "id": "4.3.1.3",
+     "page": 310
+    },
+    {
+     "id": "4.3.1.4",
+     "page": 310
+    },
+    {
+     "id": "4.3.1.5",
+     "page": 310
+    }
+   ]
+  },
+  {
+   "id": "orb:4.3.2",
+   "baseline": "orb",
+   "subdomain": "orb:4.3",
+   "ref": "4.3.2",
+   "title_en": "Risk Reporting",
+   "page": 310,
+   "controls": [
+    {
+     "id": "4.3.2.1",
+     "page": 310
+    },
+    {
+     "id": "4.3.2.2",
+     "page": 310
+    },
+    {
+     "id": "4.3.2.3",
+     "page": 310
+    }
+   ]
+  },
+  {
+   "id": "orb:5.1.1",
+   "baseline": "orb",
+   "subdomain": "orb:5.1",
+   "ref": "5.1.1",
+   "title_en": "BIA Methodology",
+   "page": 311,
+   "controls": [
+    {
+     "id": "5.1.1.1",
+     "page": 311
+    },
+    {
+     "id": "5.1.1.2",
+     "page": 311
+    }
+   ]
+  },
+  {
+   "id": "orb:5.1.2",
+   "baseline": "orb",
+   "subdomain": "orb:5.1",
+   "ref": "5.1.2",
+   "title_en": "Business Processes identification",
+   "page": 311,
+   "controls": [
+    {
+     "id": "5.1.2.1",
+     "page": 311
+    },
+    {
+     "id": "5.1.2.2",
+     "page": 311
+    },
+    {
+     "id": "5.1.2.3",
+     "page": 311
+    }
+   ]
+  },
+  {
+   "id": "orb:5.1.3",
+   "baseline": "orb",
+   "subdomain": "orb:5.1",
+   "ref": "5.1.3",
+   "title_en": "Recovery Resource Identification",
+   "page": 311,
+   "controls": [
+    {
+     "id": "5.1.3.1",
+     "page": 311
+    },
+    {
+     "id": "5.1.3.2",
+     "page": 311
+    },
+    {
+     "id": "5.1.3.3",
+     "page": 311
+    }
+   ]
+  },
+  {
+   "id": "orb:5.1.4",
+   "baseline": "orb",
+   "subdomain": "orb:5.1",
+   "ref": "5.1.4",
+   "title_en": "Identification of Single point of failure and Consolidation",
+   "page": 311,
+   "controls": [
+    {
+     "id": "5.1.4.1",
+     "page": 311
+    },
+    {
+     "id": "5.1.4.2",
+     "page": 311
+    },
+    {
+     "id": "5.1.4.3",
+     "page": 312
+    }
+   ]
+  },
+  {
+   "id": "orb:5.2.1",
+   "baseline": "orb",
+   "subdomain": "orb:5.2",
+   "ref": "5.2.1",
+   "title_en": "Recovery Strategy Identification",
+   "page": 312,
+   "controls": [
+    {
+     "id": "5.2.1.1",
+     "page": 312
+    },
+    {
+     "id": "5.2.1.2",
+     "page": 312
+    },
+    {
+     "id": "5.2.1.3",
+     "page": 312
+    },
+    {
+     "id": "5.2.1.4",
+     "page": 312
+    },
+    {
+     "id": "5.2.1.5",
+     "page": 312
+    }
+   ]
+  },
+  {
+   "id": "orb:5.2.2",
+   "baseline": "orb",
+   "subdomain": "orb:5.2",
+   "ref": "5.2.2",
+   "title_en": "Recovery Strategy Selection and Monitoring",
+   "page": 312,
+   "controls": [
+    {
+     "id": "5.2.2.1",
+     "page": 312
+    },
+    {
+     "id": "5.2.2.2",
+     "page": 312
+    },
+    {
+     "id": "5.2.2.3",
+     "page": 312
+    },
+    {
+     "id": "5.2.2.4",
+     "page": 312
+    }
+   ]
+  },
+  {
+   "id": "orb:5.3.1",
+   "baseline": "orb",
+   "subdomain": "orb:5.3",
+   "ref": "5.3.1",
+   "title_en": "Plan Components",
+   "page": 313,
+   "controls": [
+    {
+     "id": "5.3.1.1",
+     "page": 313
+    },
+    {
+     "id": "5.3.1.2",
+     "page": 313
+    },
+    {
+     "id": "5.3.1.3",
+     "page": 313
+    }
+   ]
+  },
+  {
+   "id": "orb:6.1.1",
+   "baseline": "orb",
+   "subdomain": "orb:6.1",
+   "ref": "6.1.1",
+   "title_en": "Service Management",
+   "page": 314,
+   "controls": [
+    {
+     "id": "6.1.1.1",
+     "page": 314
+    },
+    {
+     "id": "6.1.1.2",
+     "page": 314
+    },
+    {
+     "id": "6.1.1.3",
+     "page": 314
+    },
+    {
+     "id": "6.1.1.4",
+     "page": 314
+    }
+   ]
+  },
+  {
+   "id": "orb:6.2.1",
+   "baseline": "orb",
+   "subdomain": "orb:6.2",
+   "ref": "6.2.1",
+   "title_en": "Backup Capabilities",
+   "page": 314,
+   "controls": [
+    {
+     "id": "6.2.1.1",
+     "page": 314
+    },
+    {
+     "id": "6.2.1.2",
+     "page": 314
+    },
+    {
+     "id": "6.2.1.3",
+     "page": 315
+    },
+    {
+     "id": "6.2.1.4",
+     "page": 315
+    },
+    {
+     "id": "6.2.1.5",
+     "page": 315
+    }
+   ]
+  },
+  {
+   "id": "orb:6.3.1",
+   "baseline": "orb",
+   "subdomain": "orb:6.3",
+   "ref": "6.3.1",
+   "title_en": "High Availability Design",
+   "page": 315,
+   "controls": [
+    {
+     "id": "6.3.1.1",
+     "page": 315
+    },
+    {
+     "id": "6.3.1.2",
+     "page": 315
+    },
+    {
+     "id": "6.3.1.3",
+     "page": 315
+    },
+    {
+     "id": "6.3.1.4",
+     "page": 315
+    }
+   ]
+  },
+  {
+   "id": "orb:6.4.1",
+   "baseline": "orb",
+   "subdomain": "orb:6.4",
+   "ref": "6.4.1",
+   "title_en": "Technology Impact Analysis (TIA)",
+   "page": 315,
+   "controls": [
+    {
+     "id": "6.4.1.1",
+     "page": 315
+    },
+    {
+     "id": "6.4.1.2",
+     "page": 315
+    },
+    {
+     "id": "6.4.1.3",
+     "page": 315
+    },
+    {
+     "id": "6.4.1.4",
+     "page": 315
+    },
+    {
+     "id": "6.4.1.5",
+     "page": 316
+    },
+    {
+     "id": "6.4.1.6",
+     "page": 316
+    }
+   ]
+  },
+  {
+   "id": "orb:6.4.2",
+   "baseline": "orb",
+   "subdomain": "orb:6.4",
+   "ref": "6.4.2",
+   "title_en": "Recovery Planning",
+   "page": 316,
+   "controls": [
+    {
+     "id": "6.4.2.1",
+     "page": 316
+    },
+    {
+     "id": "6.4.2.2",
+     "page": 316
+    },
+    {
+     "id": "6.4.2.3",
+     "page": 316
+    },
+    {
+     "id": "6.4.2.4",
+     "page": 316
+    },
+    {
+     "id": "6.4.2.5",
+     "page": 316
+    }
+   ]
+  },
+  {
+   "id": "orb:6.5.1",
+   "baseline": "orb",
+   "subdomain": "orb:6.5",
+   "ref": "6.5.1",
+   "title_en": "Cyber Recovery Capabilities",
+   "page": 316,
+   "controls": [
+    {
+     "id": "6.5.1.1",
+     "page": 316
+    },
+    {
+     "id": "6.5.1.2",
+     "page": 317
+    },
+    {
+     "id": "6.5.1.3",
+     "page": 317
+    }
+   ]
+  },
+  {
+   "id": "orb:6.5.2",
+   "baseline": "orb",
+   "subdomain": "orb:6.5",
+   "ref": "6.5.2",
+   "title_en": "Cyber Recovery Planning",
+   "page": 317,
+   "controls": [
+    {
+     "id": "6.5.2.1",
+     "page": 317
+    },
+    {
+     "id": "6.5.2.2",
+     "page": 317
+    },
+    {
+     "id": "6.5.2.3",
+     "page": 317
+    },
+    {
+     "id": "6.5.2.4",
+     "page": 317
+    },
+    {
+     "id": "6.5.2.5",
+     "page": 317
+    }
+   ]
+  },
+  {
+   "id": "orb:6.5.3",
+   "baseline": "orb",
+   "subdomain": "orb:6.5",
+   "ref": "6.5.3",
+   "title_en": "Cyber Recovery Testing",
+   "page": 317,
+   "controls": [
+    {
+     "id": "6.5.3.1",
+     "page": 317
+    },
+    {
+     "id": "6.5.3.2",
+     "page": 317
+    },
+    {
+     "id": "6.5.3.3",
+     "page": 317
+    }
+   ]
+  },
+  {
+   "id": "orb:8.1.1",
+   "baseline": "orb",
+   "subdomain": "orb:8.1",
+   "ref": "8.1.1",
+   "title_en": "Response Team",
+   "page": 319,
+   "controls": [
+    {
+     "id": "8.1.1.1",
+     "page": 319
+    },
+    {
+     "id": "8.1.1.2",
+     "page": 319
+    },
+    {
+     "id": "8.1.1.3",
+     "page": 319
+    },
+    {
+     "id": "8.1.1.4",
+     "page": 320
+    },
+    {
+     "id": "8.1.1.5",
+     "page": 320
+    },
+    {
+     "id": "8.1.1.6",
+     "page": 321
+    },
+    {
+     "id": "8.1.1.7",
+     "page": 321
+    },
+    {
+     "id": "8.1.1.8",
+     "page": 321
+    },
+    {
+     "id": "8.1.1.9",
+     "page": 321
+    },
+    {
+     "id": "8.1.1.10",
+     "page": 321
+    }
+   ]
+  },
+  {
+   "id": "orb:8.1.2",
+   "baseline": "orb",
+   "subdomain": "orb:8.1",
+   "ref": "8.1.2",
+   "title_en": "Plans Development",
+   "page": 321,
+   "controls": [
+    {
+     "id": "8.1.2.1",
+     "page": 321
+    },
+    {
+     "id": "8.1.2.2",
+     "page": 321
+    },
+    {
+     "id": "8.1.2.3",
+     "page": 322
+    }
+   ]
+  },
+  {
+   "id": "orb:8.2.1",
+   "baseline": "orb",
+   "subdomain": "orb:8.2",
+   "ref": "8.2.1",
+   "title_en": "Internal and External Communication",
+   "page": 322,
+   "controls": [
+    {
+     "id": "8.2.1.1",
+     "page": 322
+    },
+    {
+     "id": "8.2.1.2",
+     "page": 322
+    },
+    {
+     "id": "8.2.1.3",
+     "page": 322
+    },
+    {
+     "id": "8.2.1.4",
+     "page": 322
+    }
+   ]
+  },
+  {
+   "id": "orb:8.2.2",
+   "baseline": "orb",
+   "subdomain": "orb:8.2",
+   "ref": "8.2.2",
+   "title_en": "Escalation and reporting to CBK",
+   "page": 322,
+   "controls": [
+    {
+     "id": "8.2.2.1",
+     "page": 322
+    },
+    {
+     "id": "8.2.2.2",
+     "page": 322
+    },
+    {
+     "id": "8.2.2.3",
+     "page": 323
+    },
+    {
+     "id": "8.2.2.4",
+     "page": 323
+    },
+    {
+     "id": "8.2.2.5",
+     "page": 323
+    }
+   ]
+  },
+  {
+   "id": "orb:10.1.1",
+   "baseline": "orb",
+   "subdomain": "orb:10.1",
+   "ref": "10.1.1",
+   "title_en": "Table-Top Exercises",
+   "page": 325,
+   "controls": [
+    {
+     "id": "10.1.1.1",
+     "page": 325
+    },
+    {
+     "id": "10.1.1.2",
+     "page": 325
+    },
+    {
+     "id": "10.1.1.3",
+     "page": 325
+    }
+   ]
+  },
+  {
+   "id": "orb:10.1.2",
+   "baseline": "orb",
+   "subdomain": "orb:10.1",
+   "ref": "10.1.2",
+   "title_en": "Business Continuity and Disaster Recovery Testing",
+   "page": 325,
+   "controls": [
+    {
+     "id": "10.1.2.1",
+     "page": 325
+    },
+    {
+     "id": "10.1.2.2",
+     "page": 325
+    }
+   ]
+  },
+  {
+   "id": "orb:10.1.3",
+   "baseline": "orb",
+   "subdomain": "orb:10.1",
+   "ref": "10.1.3",
+   "title_en": "Crisis Simulation",
+   "page": 325,
+   "controls": [
+    {
+     "id": "10.1.3.1",
+     "page": 325
+    },
+    {
+     "id": "10.1.3.2",
+     "page": 325
+    },
+    {
+     "id": "10.1.3.3",
+     "page": 325
+    }
+   ]
+  },
+  {
+   "id": "orb:10.1.4",
+   "baseline": "orb",
+   "subdomain": "orb:10.1",
+   "ref": "10.1.4",
+   "title_en": "Sector Wide Simulation",
+   "page": 326,
+   "controls": [
+    {
+     "id": "10.1.4.1",
+     "page": 326
+    }
+   ]
+  },
+  {
+   "id": "orb:10.1.5",
+   "baseline": "orb",
+   "subdomain": "orb:10.1",
+   "ref": "10.1.5",
+   "title_en": "Continuous Improvement",
+   "page": 326,
+   "controls": [
+    {
+     "id": "10.1.5.1",
+     "page": 326
+    },
+    {
+     "id": "10.1.5.2",
+     "page": 326
+    }
+   ]
+  },
+  {
+   "id": "orb:10.1.6",
+   "baseline": "orb",
+   "subdomain": "orb:10.1",
+   "ref": "10.1.6",
+   "title_en": "Training and Awareness",
+   "page": 326,
+   "controls": [
+    {
+     "id": "10.1.6.1",
+     "page": 326
+    },
+    {
+     "id": "10.1.6.2",
+     "page": 326
+    },
+    {
+     "id": "10.1.6.3",
+     "page": 326
+    },
+    {
+     "id": "10.1.6.4",
+     "page": 326
+    },
+    {
+     "id": "10.1.6.5",
+     "page": 326
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.1",
+   "ref": "3.1.1",
+   "title_en": "TPRM Policy",
+   "page": 345,
+   "controls": [
+    {
+     "id": "3.1.1.1",
+     "page": 349
+    },
+    {
+     "id": "3.1.1.2",
+     "page": 349
+    },
+    {
+     "id": "3.1.1.3",
+     "page": 349
+    },
+    {
+     "id": "3.1.1.4",
+     "page": 349
+    },
+    {
+     "id": "3.1.1.5",
+     "page": 349
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.1.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.1",
+   "ref": "3.1.2",
+   "title_en": "TPRM Strategy",
+   "page": 349,
+   "controls": [
+    {
+     "id": "3.1.2.1",
+     "page": 349
+    },
+    {
+     "id": "3.1.2.2",
+     "page": 350
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.2",
+   "ref": "3.2.1",
+   "title_en": "Defined Ownership",
+   "page": 350,
+   "controls": [
+    {
+     "id": "3.2.1.1",
+     "page": 350
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.2",
+   "ref": "3.2.2",
+   "title_en": "Three Lines of Defense Model",
+   "page": 350,
+   "controls": [
+    {
+     "id": "3.2.2.1",
+     "page": 350
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.2.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.2",
+   "ref": "3.2.3",
+   "title_en": "Documentation and Communication",
+   "page": 350,
+   "controls": [
+    {
+     "id": "3.2.3.1",
+     "page": 350
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.3",
+   "ref": "3.3.1",
+   "title_en": "Board of Directors",
+   "page": 351,
+   "controls": [
+    {
+     "id": "3.3.1.1",
+     "page": 351
+    },
+    {
+     "id": "3.3.1.2",
+     "page": 351
+    },
+    {
+     "id": "3.3.1.3",
+     "page": 351
+    },
+    {
+     "id": "3.3.1.4",
+     "page": 351
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.3.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.3",
+   "ref": "3.3.2",
+   "title_en": "TPRM Oversight Committee",
+   "page": 351,
+   "controls": [
+    {
+     "id": "3.3.2.1",
+     "page": 351
+    },
+    {
+     "id": "3.3.2.2",
+     "page": 351
+    },
+    {
+     "id": "3.3.2.3",
+     "page": 351
+    },
+    {
+     "id": "3.3.2.4",
+     "page": 351
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.3.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.3",
+   "ref": "3.3.3",
+   "title_en": "Executive and Senior Management",
+   "page": 352,
+   "controls": [
+    {
+     "id": "3.3.3.1",
+     "page": 352
+    },
+    {
+     "id": "3.3.3.2",
+     "page": 352
+    },
+    {
+     "id": "3.3.3.3",
+     "page": 352
+    },
+    {
+     "id": "3.3.3.4",
+     "page": 352
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.3.4",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.3",
+   "ref": "3.3.4",
+   "title_en": "Third-Party Risk Management Function",
+   "page": 352,
+   "controls": [
+    {
+     "id": "3.3.4.1",
+     "page": 352
+    },
+    {
+     "id": "3.3.4.2",
+     "page": 352
+    },
+    {
+     "id": "3.3.4.3",
+     "page": 352
+    },
+    {
+     "id": "3.3.4.4",
+     "page": 352
+    },
+    {
+     "id": "3.3.4.5",
+     "page": 352
+    },
+    {
+     "id": "3.3.4.6",
+     "page": 353
+    },
+    {
+     "id": "3.3.4.7",
+     "page": 353
+    },
+    {
+     "id": "3.3.4.8",
+     "page": 353
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.4.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.4",
+   "ref": "3.4.1",
+   "title_en": "Annual Review and Approval",
+   "page": 353,
+   "controls": [
+    {
+     "id": "3.4.1.1",
+     "page": 353
+    }
+   ]
+  },
+  {
+   "id": "tprm:3.4.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:3.4",
+   "ref": "3.4.2",
+   "title_en": "Periodic Risk Assessment Reviews",
+   "page": 353,
+   "controls": [
+    {
+     "id": "3.4.2.1",
+     "page": 353
+    },
+    {
+     "id": "3.4.2.2",
+     "page": 353
+    },
+    {
+     "id": "3.4.2.3",
+     "page": 353
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.1",
+   "ref": "4.1.1",
+   "title_en": "Impact on Critical Business Services",
+   "page": 354,
+   "controls": [
+    {
+     "id": "4.1.1.1",
+     "page": 354
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.1.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.1",
+   "ref": "4.1.2",
+   "title_en": "Data Sensitivity and Volume",
+   "page": 354,
+   "controls": [
+    {
+     "id": "4.1.2.1",
+     "page": 354
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.1.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.1",
+   "ref": "4.1.3",
+   "title_en": "Regulatory and Operational Dependencies",
+   "page": 354,
+   "controls": [
+    {
+     "id": "4.1.3.1",
+     "page": 354
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.1.4",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.1",
+   "ref": "4.1.4",
+   "title_en": "Centralized and continuously updated inventory",
+   "page": 354,
+   "controls": [
+    {
+     "id": "4.1.4.1",
+     "page": 354
+    },
+    {
+     "id": "4.1.4.2",
+     "page": 354
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.2",
+   "ref": "4.2.1",
+   "title_en": "Multi-Dimensional Risk Assessment",
+   "page": 354,
+   "controls": [
+    {
+     "id": "4.2.1.1",
+     "page": 354
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.2",
+   "ref": "4.2.2",
+   "title_en": "Risk Scoring and Prioritization",
+   "page": 355,
+   "controls": [
+    {
+     "id": "4.2.2.1",
+     "page": 355
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.2.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.2",
+   "ref": "4.2.3",
+   "title_en": "Due Diligence and Ongoing Monitoring",
+   "page": 355,
+   "controls": [
+    {
+     "id": "4.2.3.1",
+     "page": 355
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.3",
+   "ref": "4.3.1",
+   "title_en": "Identify Single Points of Failure and Concentration Risks",
+   "page": 355,
+   "controls": [
+    {
+     "id": "4.3.1.1",
+     "page": 355
+    },
+    {
+     "id": "4.3.1.2",
+     "page": 355
+    }
+   ]
+  },
+  {
+   "id": "tprm:4.3.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:4.3",
+   "ref": "4.3.2",
+   "title_en": "Interdependencies and BCP Integrations",
+   "page": 355,
+   "controls": [
+    {
+     "id": "4.3.2.1",
+     "page": 355
+    },
+    {
+     "id": "4.3.2.2",
+     "page": 355
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.1",
+   "ref": "5.1.1",
+   "title_en": "Scope of Service, Termination Clauses, Right to Audit",
+   "page": 356,
+   "controls": [
+    {
+     "id": "5.1.1.1",
+     "page": 356
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.2",
+   "ref": "5.2.1",
+   "title_en": "Contract Repository",
+   "page": 356,
+   "controls": [
+    {
+     "id": "5.2.1.1",
+     "page": 356
+    },
+    {
+     "id": "5.2.1.2",
+     "page": 356
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.2",
+   "ref": "5.2.2",
+   "title_en": "Contract Execution and Enforceability",
+   "page": 357,
+   "controls": [
+    {
+     "id": "5.2.2.1",
+     "page": 357
+    },
+    {
+     "id": "5.2.2.2",
+     "page": 357
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.3",
+   "ref": "5.3.1",
+   "title_en": "Ongoing Oversight of Contractual Compliance",
+   "page": 357,
+   "controls": [
+    {
+     "id": "5.3.1.1",
+     "page": 357
+    },
+    {
+     "id": "5.3.1.2",
+     "page": 357
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.4.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.4",
+   "ref": "5.4.1",
+   "title_en": "Contractual adequacy",
+   "page": 358,
+   "controls": [
+    {
+     "id": "5.4.1.1",
+     "page": 358
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.5.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.5",
+   "ref": "5.5.1",
+   "title_en": "Assessment of Financial Indicators",
+   "page": 358,
+   "controls": [
+    {
+     "id": "5.5.1.1",
+     "page": 358
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.6.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.6",
+   "ref": "5.6.1",
+   "title_en": "Anti-Bribery and Anti-Corruption Policy",
+   "page": 359,
+   "controls": [
+    {
+     "id": "5.6.1.1",
+     "page": 359
+    },
+    {
+     "id": "5.6.1.2",
+     "page": 359
+    },
+    {
+     "id": "5.6.1.3",
+     "page": 359
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.6.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.6",
+   "ref": "5.6.2",
+   "title_en": "Identification of Applicable Legislation & Contractual Requirements",
+   "page": 359,
+   "controls": [
+    {
+     "id": "5.6.2.1",
+     "page": 359
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.6.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.6",
+   "ref": "5.6.3",
+   "title_en": "Litigation and Legal Exposure",
+   "page": 359,
+   "controls": [
+    {
+     "id": "5.6.3.1",
+     "page": 359
+    }
+   ]
+  },
+  {
+   "id": "tprm:5.7.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:5.7",
+   "ref": "5.7.1",
+   "title_en": "Investigation",
+   "page": 360,
+   "controls": [
+    {
+     "id": "5.7.1.1",
+     "page": 360
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.1",
+   "ref": "6.1.1",
+   "title_en": "Conduct Periodic Reassessments",
+   "page": 361,
+   "controls": [
+    {
+     "id": "6.1.1.1",
+     "page": 361
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.1.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.1",
+   "ref": "6.1.2",
+   "title_en": "Identify Emerging Risks",
+   "page": 361,
+   "controls": [
+    {
+     "id": "6.1.2.1",
+     "page": 361
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.1.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.1",
+   "ref": "6.1.3",
+   "title_en": "Mitigation Planning",
+   "page": 361,
+   "controls": [
+    {
+     "id": "6.1.3.1",
+     "page": 361
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.2",
+   "ref": "6.2.1",
+   "title_en": "Classify Based on Inherent and Residual Risk",
+   "page": 361,
+   "controls": [
+    {
+     "id": "6.2.1.1",
+     "page": 361
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.2",
+   "ref": "6.2.2",
+   "title_en": "Determine Oversight Intensity",
+   "page": 361,
+   "controls": [
+    {
+     "id": "6.2.2.1",
+     "page": 361
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.2.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.2",
+   "ref": "6.2.3",
+   "title_en": "Align with Regulatory Expectations",
+   "page": 362,
+   "controls": [
+    {
+     "id": "6.2.3.1",
+     "page": 362
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.3",
+   "ref": "6.3.1",
+   "title_en": "Performance and SLA Monitoring",
+   "page": 362,
+   "controls": [
+    {
+     "id": "6.3.1.1",
+     "page": 362
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.3.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.3",
+   "ref": "6.3.2",
+   "title_en": "Compliance and Risk Surveillance",
+   "page": 362,
+   "controls": [
+    {
+     "id": "6.3.2.1",
+     "page": 362
+    }
+   ]
+  },
+  {
+   "id": "tprm:6.3.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:6.3",
+   "ref": "6.3.3",
+   "title_en": "Automated Risk Intelligence Tools",
+   "page": 362,
+   "controls": [
+    {
+     "id": "6.3.3.1",
+     "page": 362
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.1",
+   "ref": "7.1.1",
+   "title_en": "Business Continuity and Disaster Recovery Plans",
+   "page": 363,
+   "controls": [
+    {
+     "id": "7.1.1.1",
+     "page": 363
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.2",
+   "ref": "7.2.1",
+   "title_en": "Policy Review and Maintenance",
+   "page": 363,
+   "controls": [
+    {
+     "id": "7.2.1.1",
+     "page": 363
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.2",
+   "ref": "7.2.2",
+   "title_en": "Information Backup",
+   "page": 363,
+   "controls": [
+    {
+     "id": "7.2.2.1",
+     "page": 363
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.2.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.2",
+   "ref": "7.2.3",
+   "title_en": "Contingency Environments - Change Management",
+   "page": 364,
+   "controls": [
+    {
+     "id": "7.2.3.1",
+     "page": 364
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.3",
+   "ref": "7.3.1",
+   "title_en": "Availability of Key Infrastructure",
+   "page": 364,
+   "controls": [
+    {
+     "id": "7.3.1.1",
+     "page": 364
+    },
+    {
+     "id": "7.3.1.2",
+     "page": 364
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.3.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.3",
+   "ref": "7.3.2",
+   "title_en": "Resilience testing",
+   "page": 364,
+   "controls": [
+    {
+     "id": "7.3.2.1",
+     "page": 364
+    },
+    {
+     "id": "7.3.2.2",
+     "page": 364
+    },
+    {
+     "id": "7.3.2.3",
+     "page": 364
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.4.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.4",
+   "ref": "7.4.1",
+   "title_en": "Restoration testing",
+   "page": 364,
+   "controls": [
+    {
+     "id": "7.4.1.1",
+     "page": 364
+    },
+    {
+     "id": "7.4.1.2",
+     "page": 364
+    }
+   ]
+  },
+  {
+   "id": "tprm:7.5.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:7.5",
+   "ref": "7.5.1",
+   "title_en": "Contractual guarantees",
+   "page": 365,
+   "controls": [
+    {
+     "id": "7.5.1.1",
+     "page": 365
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.1",
+   "ref": "8.1.1",
+   "title_en": "Threat Detection Capability",
+   "page": 366,
+   "controls": [
+    {
+     "id": "8.1.1.1",
+     "page": 366
+    },
+    {
+     "id": "8.1.1.2",
+     "page": 366
+    },
+    {
+     "id": "8.1.1.3",
+     "page": 366
+    },
+    {
+     "id": "8.1.1.4",
+     "page": 366
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.1.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.1",
+   "ref": "8.1.2",
+   "title_en": "Logging and Monitoring",
+   "page": 366,
+   "controls": [
+    {
+     "id": "8.1.2.1",
+     "page": 366
+    },
+    {
+     "id": "8.1.2.2",
+     "page": 366
+    },
+    {
+     "id": "8.1.2.3",
+     "page": 366
+    },
+    {
+     "id": "8.1.2.4",
+     "page": 366
+    },
+    {
+     "id": "8.1.2.5",
+     "page": 366
+    },
+    {
+     "id": "8.1.2.6",
+     "page": 367
+    },
+    {
+     "id": "8.1.2.7",
+     "page": 367
+    },
+    {
+     "id": "8.1.2.8",
+     "page": 367
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.2",
+   "ref": "8.2.1",
+   "title_en": "Internal and External Notification Criteria",
+   "page": 367,
+   "controls": [
+    {
+     "id": "8.2.1.1",
+     "page": 367
+    },
+    {
+     "id": "8.2.1.2",
+     "page": 367
+    },
+    {
+     "id": "8.2.1.3",
+     "page": 367
+    },
+    {
+     "id": "8.2.1.4",
+     "page": 367
+    },
+    {
+     "id": "8.2.1.5",
+     "page": 367
+    },
+    {
+     "id": "8.2.1.6",
+     "page": 367
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.2",
+   "ref": "8.2.2",
+   "title_en": "Secure Communication Channels",
+   "page": 367,
+   "controls": [
+    {
+     "id": "8.2.2.1",
+     "page": 367
+    },
+    {
+     "id": "8.2.2.2",
+     "page": 367
+    },
+    {
+     "id": "8.2.2.3",
+     "page": 368
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.3",
+   "ref": "8.3.1",
+   "title_en": "RCA Standard and Documentation",
+   "page": 368,
+   "controls": [
+    {
+     "id": "8.3.1.1",
+     "page": 368
+    },
+    {
+     "id": "8.3.1.2",
+     "page": 368
+    },
+    {
+     "id": "8.3.1.3",
+     "page": 368
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.3.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.3",
+   "ref": "8.3.2",
+   "title_en": "Evidence Collection and Retention",
+   "page": 368,
+   "controls": [
+    {
+     "id": "8.3.2.1",
+     "page": 368
+    },
+    {
+     "id": "8.3.2.2",
+     "page": 368
+    },
+    {
+     "id": "8.3.2.3",
+     "page": 368
+    }
+   ]
+  },
+  {
+   "id": "tprm:8.3.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:8.3",
+   "ref": "8.3.3",
+   "title_en": "Incident Documentation",
+   "page": 368,
+   "controls": [
+    {
+     "id": "8.3.3.1",
+     "page": 368
+    },
+    {
+     "id": "8.3.3.2",
+     "page": 368
+    },
+    {
+     "id": "8.3.3.3",
+     "page": 368
+    },
+    {
+     "id": "8.3.3.4",
+     "page": 369
+    }
+   ]
+  },
+  {
+   "id": "tprm:9.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:9.1",
+   "ref": "9.1.1",
+   "title_en": "Encryption and Key Management",
+   "page": 370,
+   "controls": [
+    {
+     "id": "9.1.1.1",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.2",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.3",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.4",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.5",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.6",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.7",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.8",
+     "page": 370
+    },
+    {
+     "id": "9.1.1.9",
+     "page": 371
+    },
+    {
+     "id": "9.1.1.10",
+     "page": 371
+    },
+    {
+     "id": "9.1.1.11",
+     "page": 371
+    },
+    {
+     "id": "9.1.1.12",
+     "page": 371
+    }
+   ]
+  },
+  {
+   "id": "tprm:9.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:9.2",
+   "ref": "9.2.1",
+   "title_en": "Data Retention and Archival",
+   "page": 371,
+   "controls": [
+    {
+     "id": "9.2.1.1",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.2",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.3",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.4",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.5",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.6",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.7",
+     "page": 371
+    },
+    {
+     "id": "9.2.1.8",
+     "page": 372
+    },
+    {
+     "id": "9.2.1.9",
+     "page": 372
+    },
+    {
+     "id": "9.2.1.10",
+     "page": 372
+    },
+    {
+     "id": "9.2.1.11",
+     "page": 372
+    }
+   ]
+  },
+  {
+   "id": "tprm:9.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:9.2",
+   "ref": "9.2.2",
+   "title_en": "Awareness and Training",
+   "page": 372,
+   "controls": [
+    {
+     "id": "9.2.2.1",
+     "page": 372
+    }
+   ]
+  },
+  {
+   "id": "tprm:9.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:9.3",
+   "ref": "9.3.1",
+   "title_en": "Data Classification and Inventory",
+   "page": 372,
+   "controls": [
+    {
+     "id": "9.3.1.1",
+     "page": 372
+    },
+    {
+     "id": "9.3.1.2",
+     "page": 372
+    },
+    {
+     "id": "9.3.1.3",
+     "page": 372
+    },
+    {
+     "id": "9.3.1.4",
+     "page": 372
+    },
+    {
+     "id": "9.3.1.5",
+     "page": 372
+    },
+    {
+     "id": "9.3.1.6",
+     "page": 372
+    },
+    {
+     "id": "9.3.1.7",
+     "page": 373
+    }
+   ]
+  },
+  {
+   "id": "tprm:9.3.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:9.3",
+   "ref": "9.3.2",
+   "title_en": "Data Handling",
+   "page": 373,
+   "controls": [
+    {
+     "id": "9.3.2.1",
+     "page": 373
+    },
+    {
+     "id": "9.3.2.2",
+     "page": 373
+    },
+    {
+     "id": "9.3.2.3",
+     "page": 373
+    },
+    {
+     "id": "9.3.2.4",
+     "page": 373
+    }
+   ]
+  },
+  {
+   "id": "tprm:9.3.3",
+   "baseline": "tprm",
+   "subdomain": "tprm:9.3",
+   "ref": "9.3.3",
+   "title_en": "Awareness on Classification",
+   "page": 373,
+   "controls": [
+    {
+     "id": "9.3.3.1",
+     "page": 373
+    }
+   ]
+  },
+  {
+   "id": "tprm:10.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:10.1",
+   "ref": "10.1.1",
+   "title_en": "Disclosure and Approval",
+   "page": 374,
+   "controls": [
+    {
+     "id": "10.1.1.1",
+     "page": 374
+    }
+   ]
+  },
+  {
+   "id": "tprm:10.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:10.2",
+   "ref": "10.2.1",
+   "title_en": "Sub-contracting Monitoring and Oversight",
+   "page": 374,
+   "controls": [
+    {
+     "id": "10.2.1.1",
+     "page": 374
+    }
+   ]
+  },
+  {
+   "id": "tprm:11.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:11.1",
+   "ref": "11.1.1",
+   "title_en": "Exit Plan and Process",
+   "page": 375,
+   "controls": [
+    {
+     "id": "11.1.1.1",
+     "page": 375
+    },
+    {
+     "id": "11.1.1.2",
+     "page": 375
+    },
+    {
+     "id": "11.1.1.3",
+     "page": 375
+    },
+    {
+     "id": "11.1.1.4",
+     "page": 375
+    },
+    {
+     "id": "11.1.1.5",
+     "page": 375
+    }
+   ]
+  },
+  {
+   "id": "tprm:12.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:12.1",
+   "ref": "12.1.1",
+   "title_en": "Storage Access and Segmentation",
+   "page": 376,
+   "controls": [
+    {
+     "id": "12.1.1.1",
+     "page": 376
+    },
+    {
+     "id": "12.1.1.2",
+     "page": 376
+    },
+    {
+     "id": "12.1.1.3",
+     "page": 376
+    },
+    {
+     "id": "12.1.1.4",
+     "page": 376
+    }
+   ]
+  },
+  {
+   "id": "tprm:12.1.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:12.1",
+   "ref": "12.1.2",
+   "title_en": "Storage Configuration Management",
+   "page": 376,
+   "controls": [
+    {
+     "id": "12.1.2.1",
+     "page": 376
+    },
+    {
+     "id": "12.1.2.2",
+     "page": 376
+    },
+    {
+     "id": "12.1.2.3",
+     "page": 376
+    }
+   ]
+  },
+  {
+   "id": "tprm:12.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:12.2",
+   "ref": "12.2.1",
+   "title_en": "Data Retention",
+   "page": 376,
+   "controls": [
+    {
+     "id": "12.2.1.1",
+     "page": 376
+    },
+    {
+     "id": "12.2.1.2",
+     "page": 377
+    },
+    {
+     "id": "12.2.1.3",
+     "page": 377
+    }
+   ]
+  },
+  {
+   "id": "tprm:12.2.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:12.2",
+   "ref": "12.2.2",
+   "title_en": "Archival and Purge",
+   "page": 377,
+   "controls": [
+    {
+     "id": "12.2.2.1",
+     "page": 377
+    },
+    {
+     "id": "12.2.2.2",
+     "page": 377
+    },
+    {
+     "id": "12.2.2.3",
+     "page": 377
+    },
+    {
+     "id": "12.2.2.4",
+     "page": 377
+    },
+    {
+     "id": "12.2.2.5",
+     "page": 377
+    },
+    {
+     "id": "12.2.2.6",
+     "page": 377
+    }
+   ]
+  },
+  {
+   "id": "tprm:12.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:12.3",
+   "ref": "12.3.1",
+   "title_en": "Backup and Recovery",
+   "page": 377,
+   "controls": [
+    {
+     "id": "12.3.1.1",
+     "page": 377
+    },
+    {
+     "id": "12.3.1.2",
+     "page": 377
+    },
+    {
+     "id": "12.3.1.3",
+     "page": 377
+    },
+    {
+     "id": "12.3.1.4",
+     "page": 378
+    },
+    {
+     "id": "12.3.1.5",
+     "page": 378
+    },
+    {
+     "id": "12.3.1.6",
+     "page": 378
+    }
+   ]
+  },
+  {
+   "id": "tprm:13.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:13.1",
+   "ref": "13.1.1",
+   "title_en": "Transactional Controls",
+   "page": 379,
+   "controls": [
+    {
+     "id": "13.1.1.1",
+     "page": 379
+    },
+    {
+     "id": "13.1.1.2",
+     "page": 379
+    },
+    {
+     "id": "13.1.1.3",
+     "page": 379
+    },
+    {
+     "id": "13.1.1.4",
+     "page": 379
+    },
+    {
+     "id": "13.1.1.5",
+     "page": 379
+    }
+   ]
+  },
+  {
+   "id": "tprm:13.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:13.2",
+   "ref": "13.2.1",
+   "title_en": "Due Diligence Process",
+   "page": 379,
+   "controls": [
+    {
+     "id": "13.2.1.1",
+     "page": 379
+    },
+    {
+     "id": "13.2.1.2",
+     "page": 379
+    },
+    {
+     "id": "13.2.1.3",
+     "page": 379
+    },
+    {
+     "id": "13.2.1.4",
+     "page": 379
+    },
+    {
+     "id": "13.2.1.5",
+     "page": 380
+    }
+   ]
+  },
+  {
+   "id": "tprm:13.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:13.3",
+   "ref": "13.3.1",
+   "title_en": "Data Minimization and Secure Transmission",
+   "page": 380,
+   "controls": [
+    {
+     "id": "13.3.1.1",
+     "page": 380
+    },
+    {
+     "id": "13.3.1.2",
+     "page": 380
+    },
+    {
+     "id": "13.3.1.3",
+     "page": 380
+    },
+    {
+     "id": "13.3.1.4",
+     "page": 380
+    }
+   ]
+  },
+  {
+   "id": "tprm:13.4.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:13.4",
+   "ref": "13.4.1",
+   "title_en": "Transaction Monitoring & Alerts",
+   "page": 380,
+   "controls": [
+    {
+     "id": "13.4.1.1",
+     "page": 380
+    },
+    {
+     "id": "13.4.1.2",
+     "page": 380
+    }
+   ]
+  },
+  {
+   "id": "tprm:13.4.2",
+   "baseline": "tprm",
+   "subdomain": "tprm:13.4",
+   "ref": "13.4.2",
+   "title_en": "Regulatory Reporting Requirements",
+   "page": 380,
+   "controls": [
+    {
+     "id": "13.4.2.1",
+     "page": 380
+    },
+    {
+     "id": "13.4.2.2",
+     "page": 380
+    }
+   ]
+  },
+  {
+   "id": "tprm:14.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:14.1",
+   "ref": "14.1.1",
+   "title_en": "Cloud Security Safeguards",
+   "page": 381,
+   "controls": [
+    {
+     "id": "14.1.1.1",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.2",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.3",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.4",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.5",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.6",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.7",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.8",
+     "page": 381
+    },
+    {
+     "id": "14.1.1.9",
+     "page": 382
+    },
+    {
+     "id": "14.1.1.10",
+     "page": 382
+    }
+   ]
+  },
+  {
+   "id": "tprm:15.1.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:15.1",
+   "ref": "15.1.1",
+   "title_en": "Inter-Affiliates Monitoring and Oversight",
+   "page": 383,
+   "controls": [
+    {
+     "id": "15.1.1.1",
+     "page": 383
+    },
+    {
+     "id": "15.1.1.2",
+     "page": 383
+    }
+   ]
+  },
+  {
+   "id": "tprm:15.2.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:15.2",
+   "ref": "15.2.1",
+   "title_en": "Customer Consent for Data Sharing",
+   "page": 383,
+   "controls": [
+    {
+     "id": "15.2.1.1",
+     "page": 383
+    }
+   ]
+  },
+  {
+   "id": "tprm:15.3.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:15.3",
+   "ref": "15.3.1",
+   "title_en": "Foreign Affiliates",
+   "page": 383,
+   "controls": [
+    {
+     "id": "15.3.1.1",
+     "page": 383
+    }
+   ]
+  },
+  {
+   "id": "tprm:15.4.1",
+   "baseline": "tprm",
+   "subdomain": "tprm:15.4",
+   "ref": "15.4.1",
+   "title_en": "Business Continuity",
+   "page": 383,
+   "controls": [
+    {
+     "id": "15.4.1.1",
+     "page": 383
+    }
+   ]
+  }
+ ]
+}
