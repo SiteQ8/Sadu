@@ -23,7 +23,7 @@ const TEXT = new Set(['.js', '.mjs', '.json', '.md', '.html', '.css']);
 const marker = /\b(TODO|FIXME)\b/;
 function walk(dir) {
   for (const name of readdirSync(dir)) {
-    if (['node_modules', '.git', 'source', 'media'].includes(name)) continue;
+    if (['node_modules', '.git', 'source', 'media', '.taste-skill', '.impeccable'].includes(name)) continue;
     const p = join(dir, name);
     if (statSync(p).isDirectory()) walk(p);
     else if (TEXT.has(extname(name)) && name !== 'preflight.mjs' && marker.test(readFileSync(p, 'utf8'))) problems.push(`unfinished marker in ${p}`);

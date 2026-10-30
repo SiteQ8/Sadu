@@ -42,7 +42,7 @@ const TEXT = new Set(['.js', '.mjs', '.json', '.md', '.html', '.css', '.txt', '.
 export function textFiles(dir = root) {
   const out = [];
   for (const name of readdirSync(dir)) {
-    if (['.git', 'node_modules', 'source', 'media'].includes(name)) continue;
+    if (['.git', 'node_modules', 'source', 'media', '.taste-skill', '.impeccable'].includes(name)) continue;
     const p = join(dir, name);
     const st = statSync(p);
     if (st.isDirectory()) out.push(...textFiles(p));

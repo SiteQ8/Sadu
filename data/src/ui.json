@@ -466,5 +466,9 @@
  "col.assessed": {
   "en": "Assessed",
   "ar": "المقيَّم"
+ },
+ "register.p": {
+  "en": "p. {p}",
+  "ar": "ص {p}"
  }
 }
