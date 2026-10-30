@@ -27,7 +27,7 @@ test('no inline scripts, inline style attributes or inline handlers in the page 
   assert.ok(!/\sstyle=/.test(html), 'no inline style attributes in the page');
   assert.ok(!/\son[a-z]+\s*=\s*["']/i.test(html), 'no inline event handlers');
   assert.ok(!/style="/.test(app), 'app never renders style attributes');
-  assert.match(app, /\.style\.width = /, 'widths applied through the CSSOM');
+  assert.match(app, /\.style\.clipPath = /, 'bar values applied through the CSSOM as a clip, never a layout width');
 });
 
 test('CNAME matches the project domain and Pages guard files exist', () => {
@@ -41,4 +41,28 @@ test('the every-visit disclaimer is shown unconditionally and the app has no net
   assert.ok(!/disclaimer.*localStorage|localStorage.*disclaimer/i.test(app), 'popup is not gated by storage');
   const fetches = [...app.matchAll(/fetch\(([^)]*)\)/g)].map((m) => m[1]);
   assert.deepEqual(fetches, ["'data/bundle.json', { cache: 'no-store' }"]);
+});
+
+const css = readFileSync(join(root, 'docs/assets/styles.css'), 'utf8');
+
+test('motion follows the house rules: named transitions, no ease-in, hover gated, reduced motion honoured', () => {
+  assert.ok(!/transition:\s*all\b/.test(css), 'no transition: all');
+  assert.ok(!/\bease-in\b(?!-out)/.test(css.replace(/--ease-in-out[^;]*;/g, '')), 'no ease-in on UI');
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)/, 'reduced motion block present');
+  assert.match(css, /@media \(hover: hover\) and \(pointer: fine\)/, 'hover styles gated to pointers that can hover');
+  assert.ok(!/:hover/.test(css.split('@media (hover: hover) and (pointer: fine)')[0]), 'no ungated hover rule before the gate');
+  for (const m of css.matchAll(/(\d+)ms/g)) assert.ok(Number(m[1]) <= 400, `duration ${m[1]}ms stays within the UI budget`);
+  assert.ok(!/@keyframes/.test(css), 'state changes use transitions, not keyframes');
+});
+
+test('the woven band is an authored SVG pattern, not a gradient, and the stylesheet carries no gradient at all', () => {
+  assert.match(css, /--weave: url\("data:image\/svg\+xml,/);
+  assert.ok(!/repeating-linear-gradient|radial-gradient|conic-gradient/.test(css), 'no decorative gradients');
+  assert.equal((css.match(/linear-gradient/g) || []).length, 1, 'the only linear-gradient is the edge mask on the scrolling tab row');
+});
+
+test('values come from the scales: one typeface, three radii, spacing tokens', () => {
+  assert.equal((css.match(/font-family:/g) || []).length, 1, 'one font-family declaration');
+  const radii = new Set([...css.matchAll(/border-radius:\s*([^;]+);/g)].map((m) => m[1].trim()));
+  for (const r of radii) assert.ok(['var(--r-card)', 'var(--r-control)', '999px', '4px', '3px', '6px'].includes(r), `radius ${r} is from the scale`);
 });

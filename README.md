@@ -89,6 +89,10 @@ node mcp/server.mjs --selftest
 |---|---|---|
 | ![](media/register-ar.png) | ![](media/crosswalk-en.png) | ![](media/report-en.png) |
 
+## Design
+
+The register is an Operate surface: the visitor is there to finish an assessment, so the page reads as a clean ledger first and as Sadu weaving second. The world of the loom lends exactly four things: one typeface (Readex Pro), the palette of the yarn (undyed wool sand, madder red on the data and on one control, black goat hair as the emphasis fill, a little ochre), the density of a ledger, and one signature move, the woven diamond band at the head of the page and on the crown of the notice. Everything else is a standard control. The tokens, scales and rules are written down in [DESIGN.md](DESIGN.md); the test suite holds the stylesheet to them (named transitions only, no gradients, three radii, hover states gated to pointers that can hover, reduced motion honoured).
+
 ## Development
 
 ```

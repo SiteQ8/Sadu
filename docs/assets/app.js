@@ -62,6 +62,7 @@ const S = (o) => (state.lang === 'ar' ? o.summary_ar : o.summary_en);
 const D = (o) => (state.lang === 'ar' ? o.desc_ar : o.desc_en);
 const short = (b) => { const x = IX.baselines.get(b.id) || b; return (state.lang === 'ar' ? x.short_ar : x.short_en) || x.title_en; };
 const pct = (v) => (v == null ? '-' : v + '%');
+const narrow = () => window.matchMedia && window.matchMedia('(max-width: 900px)').matches;
 const bandLabel = (id) => (id ? t('band.' + id) : '');
 
 function effectiveDark() {
@@ -140,8 +141,16 @@ function visibleAreas() {
 function bar(label, r, cls = '') {
   return `<div class="bar ${cls}"><span>${esc(label)}</span><div class="track" aria-hidden="true"><i data-w="${r.readiness || 0}"></i></div><span class="pv ${r.readiness == null ? 'na' : ''}">${pct(r.readiness)}</span></div>`;
 }
+// The fill spans its track and is clipped to the value, so a change is one GPU-side clip, never a layout pass.
 function setWidths(root) {
-  $$('[data-w]', root).forEach((el) => { el.style.width = el.dataset.w + '%'; });
+  const rtl = html.getAttribute('dir') === 'rtl';
+  $$('[data-w]', root).forEach((el) => {
+    const rest = Math.max(0, 100 - Number(el.dataset.w));
+    el.style.clipPath = rtl ? `inset(0 0 0 ${rest}% round 4px)` : `inset(0 ${rest}% 0 0 round 4px)`;
+  });
+}
+function cell(label, value, extra = '', cls = '') {
+  return `<div class="cell"><span class="k">${esc(label)}</span><span class="v ${cls}">${value}</span>${extra ? `<span class="sub">${esc(extra)}</span>` : ''}</div>`;
 }
 function renderSummary() {
   const o = EV.overall;
@@ -149,21 +158,20 @@ function renderSummary() {
   const doms = EV.domains.filter((d) => d.baseline === state.baseline);
   const el = $('#summary');
   el.innerHTML =
-    `<div class="overall">`
-    + `<div class="lbl">${esc(t('readiness.overall'))}</div>`
-    + `<div class="big ${o.readiness == null ? 'na' : ''}">${o.readiness == null ? esc(t('status.unset')) : o.readiness + '%'}</div>`
-    + (o.band ? `<span class="band-chip">${esc(bandLabel(o.band))}</span>` : '')
-    + `<div class="assessed">${esc(t('readiness.assessed', { n: o.assessed, total: EV.total }))}</div>`
-    + `<div class="assessed">${esc(t('readiness.maturityAvg'))}: ${o.maturity == null ? esc(t('maturity.unset')) : o.maturity}</div>`
+    `<div class="ledger">`
+    + `<div class="ledger-cells">`
+    + cell(t('readiness.overall'), o.readiness == null ? esc(t('status.unset')) : o.readiness + '%', o.band ? bandLabel(o.band) : '', o.readiness == null ? 'na' : 'lead')
+    + cell(t('readiness.maturityAvg'), o.maturity == null ? esc(t('maturity.unset')) : String(o.maturity), o.maturity == null ? '' : t('maturity.' + Math.round(o.maturity)), o.maturity == null ? 'na' : '')
+    + cell(t('col.assessed'), `${o.assessed} / ${EV.total}`, t('register.controls'))
+    + cell(t('tab.soa'), `${EV.soa.applicable} / ${EV.soa.not_applicable}`, `${t('soa.applicable')} / ${t('soa.notApplicable')}`)
     + `</div>`
-    + `<div class="bars">`
-    + EV.baselines.map((b) => bar(short(b), b, 'base' + (b.id === state.baseline ? '' : ' muted'))).join('')
-    + `<div class="bar muted bar-gap"><span>${esc(t('readiness.byDomain'))} ${esc(bl ? short(bl) : '')}</span><span></span><span></span></div>`
-    + doms.map((d) => bar(`${d.ref} ${T(d)}`, d)).join('')
-    + `</div>`;
+    + (narrow() ? `<details class="ledger-more"><summary>${esc(t('readiness.byBaseline'))} · ${esc(t('readiness.byDomain'))}</summary>` : `<div class="ledger-more">`)
+    + `<div class="bars baselines"><h3>${esc(t('readiness.byBaseline'))}</h3><div class="rows">` + EV.baselines.map((b) => bar(short(b), b, 'base' + (b.id === state.baseline ? '' : ' off'))).join('') + `</div></div>`
+    + `<div class="bars domains"><h3>${esc(t('readiness.byDomain'))} · ${esc(bl ? short(bl) : '')}</h3><div class="rows">` + doms.map((d) => bar(`${d.ref} ${T(d)}`, d)).join('') + `</div></div>`
+    + (narrow() ? `</details></div>` : `</div></div>`);
   setWidths(el);
   const mini = $('#mini');
-  mini.innerHTML = `<div class="mini-bar" aria-hidden="true"><i data-w="${o.readiness || 0}"></i></div><span class="mini-v">${o.readiness == null ? '-' : o.readiness + '%'}</span><span>${esc(bandLabel(o.band))}</span>`;
+  mini.innerHTML = `<div class="mini-bar track" aria-hidden="true"><i data-w="${o.readiness || 0}"></i></div><span class="mini-v">${o.readiness == null ? '-' : o.readiness + '%'}</span><span>${esc(bandLabel(o.band))}</span>`;
   setWidths(mini);
 }
 function renderIndex() {
@@ -172,11 +180,11 @@ function renderIndex() {
   el.innerHTML =
     `<div class="bswitch" role="group" aria-label="${esc(t('register.baseline'))}">`
     + BUNDLE.corf.baselines.map((b) => `<button type="button" data-act="baseline" data-b="${b.id}" aria-pressed="${b.id === state.baseline}" title="${esc(T(b))}">${esc(short(b))}</button>`).join('')
-    + `</div>`
+    + `</div><div class="dlist">`
     + domainsOf(state.baseline).map((d) => {
       const n = subsOf(d.id).flatMap((s) => areasOf(s.id)).filter((a) => vis.has(a.id)).length;
       return `<a href="#dom-${esc(d.id.replace(':', '-'))}" data-dom="${esc(d.id.replace(':', '-'))}"><span>${esc(d.ref)} ${esc(T(d))}</span><span class="cnt">${n}</span></a>`;
-    }).join('');
+    }).join('') + `</div>`;
 }
 function statusButtons(id, disabled) {
   const st = statusOf(id);
@@ -190,7 +198,7 @@ function controlRow(a, c, disabled) {
   const note = state.a.notes[id] || '';
   const open = state.notesOpen.has(id);
   return `<div class="ctrl ${st ? 's-' + st : ''}" data-ctrl="${esc(id)}">`
-    + `<span class="ctrl-id">${esc(c.id)}</span><span class="ctrl-page">p. ${c.page}</span>`
+    + `<span class="ctrl-id">${esc(c.id)}</span><span class="ctrl-page">${esc(t('register.p', { p: c.page }))}</span>`
     + statusButtons(id, disabled)
     + `<button type="button" class="note-toggle ${note ? 'has' : ''}" data-act="note-toggle" data-id="${esc(id)}" aria-expanded="${open}">${esc(t('note.add'))}</button>`
     + (open ? `<div class="note-wrap"><textarea data-act="note" data-id="${esc(id)}" placeholder="${esc(t('note.placeholder'))}" aria-label="${esc(t('note.add'))} ${esc(id)}">${esc(note)}</textarea></div>` : '')
@@ -307,7 +315,7 @@ function renderCrosswalk() {
     + `<div class="cw-tools"><div class="seg" role="group" aria-label="${esc(t('cw.reverse'))}">${core.FRAMEWORKS.map((x) => `<button type="button" class="seg-btn" data-act="cw-framework" data-f="${x}" aria-pressed="${f === x}">${esc(t('cw.' + x))}</button>`).join('')}</div>`
     + `<label class="sr" for="cw-ref">${esc(t('cw.pick'))}</label><select id="cw-ref" data-act="cw-ref">${opts.map((o) => `<option value="${esc(o.id)}" ${o.id === state.cw.ref ? 'selected' : ''}>${esc(o.label)}</option>`).join('')}</select></div>`
     + `<div><strong>${esc(t('cw.' + f))} ${esc(state.cw.ref)}</strong> ${esc(label ? N(label) : '')}</div>`
-    + `<div class="areas">` + (r.areas.length ? r.areas.map((a) => `<a href="#area-${esc(a.id.replace(':', '-'))}" data-act="goto-area" data-id="${esc(a.id)}">${esc(a.id)} ${esc(T(a))}</a>`).join('') : `<span class="muted">${esc(t('cw.none'))}</span>`) + `</div>`
+    + `<div class="areas">` + (r.areas.length ? r.areas.map((a) => `<a href="#area-${esc(a.id.replace(':', '-'))}" data-act="goto-area" data-id="${esc(a.id)}"><span class="ac">${esc(a.id)}</span> ${esc(T(a))}</a>`).join('') : `<span class="muted">${esc(t('cw.none'))}</span>`) + `</div>`
     + `<div class="cw-derived">` + others.map((x) => `<div><span class="dl">${esc(t('cw.' + x))} · ${esc(t('cw.derived'))}</span><div class="chips">${r.derived[x].length ? r.derived[x].map((id) => { const o = core.referenceLabel(BUNDLE, x, id); return `<span class="chip ${x}" title="${esc(o ? N(o) : '')}">${esc(id)}</span>`; }).join('') : `<span class="muted">${esc(t('cw.none'))}</span>`}</div></div>`).join('') + `</div>`
     + `</div>`
     + `<div class="cw-tools"><div class="bswitch seg" role="group" aria-label="${esc(t('register.baseline'))}">${BUNDLE.corf.baselines.map((b) => `<button type="button" class="seg-btn" data-act="cw-baseline" data-b="${b.id}" aria-pressed="${state.cw.baseline === b.id}">${esc(short(b))}</button>`).join('')}</div></div>`
@@ -325,11 +333,11 @@ function renderFrameworks() {
   const mapped = (id) => (IX.reverse[f].get(id) || []).length;
   let body = '';
   if (f === 'iso') {
-    body = BUNDLE.iso.themes.map((th) => `<div class="fw-group"><h3>${esc(th.id)} ${esc(N(th))}</h3>` + BUNDLE.iso.controls.filter((c) => c.theme === th.id).map((c) => `<div class="fw-item"><span class="fid">${esc(c.id)}</span><span class="ft">${esc(N(c))}</span><span class="fm">${esc(t('fw.mappedTo', { n: mapped(c.id) }))}</span></div>`).join('') + `</div>`).join('');
+    body = BUNDLE.iso.themes.map((th) => `<div class="fw-group"><h3>${esc(th.id)} ${esc(N(th))}</h3><div class="fw-list cols">` + BUNDLE.iso.controls.filter((c) => c.theme === th.id).map((c) => `<div class="fw-item"><span class="fid">${esc(c.id)}</span><span class="ft">${esc(N(c))}</span><span class="fm">${esc(t('fw.mappedTo', { n: mapped(c.id) }))}</span></div>`).join('') + `</div></div>`).join('');
   } else if (f === 'pci') {
-    body = BUNDLE.pci.requirements.map((r) => `<div class="fw-group"><h3>${esc(r.id)} · ${esc(N(r))}</h3>` + BUNDLE.pci.groups.filter((g) => g.req === r.id).map((g) => `<div class="fw-item"><span class="fid">${esc(g.id)}</span><span class="ft">${esc(N(g))}</span><span class="fm">${esc(t('fw.mappedTo', { n: mapped(g.id) }))}</span></div>`).join('') + `</div>`).join('');
+    body = BUNDLE.pci.requirements.map((r) => `<div class="fw-group"><h3>${esc(r.id)} · ${esc(N(r))}</h3><div class="fw-list">` + BUNDLE.pci.groups.filter((g) => g.req === r.id).map((g) => `<div class="fw-item"><span class="fid">${esc(g.id)}</span><span class="ft">${esc(N(g))}</span><span class="fm">${esc(t('fw.mappedTo', { n: mapped(g.id) }))}</span></div>`).join('') + `</div></div>`).join('');
   } else {
-    body = `<p class="muted">${esc(N({ en: BUNDLE.swift.note_en, ar: BUNDLE.swift.note_ar }))}</p>` + BUNDLE.swift.principles.map((p) => { const o = BUNDLE.swift.objectives.find((x) => x.id === p.objective); return `<div class="fw-group"><h3>${esc(o.id)} ${esc(N(o))} · ${esc(p.id)} ${esc(N(p))}</h3>` + BUNDLE.swift.controls.filter((c) => c.principle === p.id).map((c) => `<div class="fw-item"><span class="fid">${esc(c.id)}</span><span class="ft">${esc(N(c))}</span><span class="tag ${c.mandatory ? 'mand' : 'adv'}">${esc(c.mandatory ? t('fw.mandatory') : t('fw.advisory'))}</span><span class="fm">${esc(t('fw.mappedTo', { n: mapped(c.id) }))}</span><span class="fd">${esc(D(c))}</span></div>`).join('') + `</div>`; }).join('');
+    body = `<p class="muted">${esc(N({ en: BUNDLE.swift.note_en, ar: BUNDLE.swift.note_ar }))}</p>` + BUNDLE.swift.principles.map((p) => { const o = BUNDLE.swift.objectives.find((x) => x.id === p.objective); return `<div class="fw-group"><h3>${esc(o.id)} ${esc(N(o))} · ${esc(p.id)} ${esc(N(p))}</h3><div class="fw-list">` + BUNDLE.swift.controls.filter((c) => c.principle === p.id).map((c) => `<div class="fw-item"><span class="fid">${esc(c.id)}</span><span class="ft">${esc(N(c))}</span><span class="tag ${c.mandatory ? 'mand' : 'adv'}">${esc(c.mandatory ? t('fw.mandatory') : t('fw.advisory'))}</span><span class="fm">${esc(t('fw.mappedTo', { n: mapped(c.id) }))}</span><span class="fd">${esc(D(c))}</span></div>`).join('') + `</div></div>`; }).join('');
   }
   const ver = { iso: BUNDLE.iso, pci: BUNDLE.pci, swift: BUNDLE.swift }[f];
   $('#panel-frameworks').innerHTML =
@@ -342,7 +350,7 @@ function renderFrameworks() {
 function renderReport() {
   reevaluate();
   const o = EV.overall;
-  const dateStr = new Date().toLocaleDateString(state.lang === 'ar' ? 'ar-KW' : 'en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+  const dateStr = new Date().toLocaleDateString(state.lang === 'ar' ? 'ar-KW-u-nu-latn' : 'en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
   const rows = [];
   for (const b of EV.baselines) {
     rows.push(`<tr class="base"><td>${esc(T(b))}</td><td class="num">${pct(b.readiness)}</td><td>${esc(bandLabel(b.band))}</td><td class="num">${b.maturity ?? '-'}</td><td class="num">${b.assessed}/${b.total}</td><td class="num">${b.counts.not_implemented}</td></tr>`);
@@ -363,7 +371,7 @@ function renderReport() {
     + `<div class="rep-stat"><div class="n">${o.counts.unset}</div><div class="k">${esc(t('status.unset'))}</div></div>`
     + `<div class="rep-stat"><div class="n">${EV.soa.applicable}/${EV.soa.not_applicable}</div><div class="k">${esc(t('soa.applicable'))}/${esc(t('soa.notApplicable'))}</div></div>`
     + `</div>`
-    + `<table class="rep-table"><thead><tr><th>${esc(t('register.domain'))}</th><th>${esc(t('readiness.title'))}</th><th>${esc(t('col.band'))}</th><th>${esc(t('maturity.title'))}</th><th>${esc(t('col.assessed'))}</th><th>${esc(t('status.notimplemented'))}</th></tr></thead><tbody>${rows.join('')}</tbody></table>`
+    + `<table class="rep-table"><thead><tr><th>${esc(t('register.domain'))}</th><th class="num">${esc(t('readiness.title'))}</th><th>${esc(t('col.band'))}</th><th class="num">${esc(t('maturity.title'))}</th><th class="num">${esc(t('col.assessed'))}</th><th class="num">${esc(t('status.notimplemented'))}</th></tr></thead><tbody>${rows.join('')}</tbody></table>`
     + `<h3>${esc(t('report.gaps'))}</h3><p class="muted">${esc(t('report.gapsIntro'))}</p>`
     + (EV.gaps.length ? `<ol class="gaps">${EV.gaps.slice(0, 15).map((g) => `<li>${esc(g.id)} ${esc(T(g))}: ${g.counts.not_implemented} / ${g.total}</li>`).join('')}</ol>` : `<p class="muted">${esc(t('cw.none'))}</p>`)
     + `</div>`;
