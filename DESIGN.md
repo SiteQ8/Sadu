@@ -14,7 +14,8 @@ colors:
   madder-line: "#e7c9c4"
   goat-hair: "#241f1c"
   on-goat-hair: "#f5efe2"
-  ochre: "#a86a22"
+  on-status: "#ffffff"
+  ochre: "#7f5118"
   ochre-wash: "#f5e8d3"
   rule: "#e6ddc9"
   rule-control: "#d9cfb8"
@@ -31,6 +32,8 @@ colors:
   night-wool-deep: "#2a221c"
   night-ink: "#f1e9dc"
   night-madder: "#e0736a"
+  night-ochre: "#e0a54a"
+  night-on-status: "#1a0f0e"
 typography:
   title:
     fontFamily: "Readex Pro, system-ui, sans-serif"
@@ -112,16 +115,16 @@ components:
     typography: "{typography.label}"
   status-implemented:
     backgroundColor: "{colors.met}"
-    textColor: "#ffffff"
+    textColor: "{colors.on-status}"
   status-partial:
     backgroundColor: "{colors.partial}"
-    textColor: "#ffffff"
+    textColor: "{colors.on-status}"
   status-not-implemented:
     backgroundColor: "{colors.gap}"
-    textColor: "#ffffff"
+    textColor: "{colors.on-status}"
   status-not-applicable:
     backgroundColor: "{colors.na}"
-    textColor: "#ffffff"
+    textColor: "{colors.on-status}"
   card:
     backgroundColor: "{colors.wool}"
     rounded: "{rounded.card}"
@@ -152,15 +155,15 @@ The creative north star is **the loom**: the register is the warp (CORF, running
 
 The palette is the yarn of the Bedouin loom, not a brand chart. The ground is undyed wool (`sand`, with `wool` for raised surfaces and `wool-deep` for tinted rows). The ink is near-black. The accent is `madder` red and it goes on data and on one control: the readiness bars, the lead readiness figure, control-area ids, the active tab underline. Emphasis fills use `goat-hair` black with sand text; in the dark theme the same role inverts to sand with black text so emphasis never disappears into the ground.
 
-Status colours belong to control rows only and say what a control is, never how the page looks: `met` green for implemented, `partial` ochre for partially implemented, `gap` red for not implemented, `na` grey for not applicable. Each has a wash for the row behind it. The crosswalk chips are tinted by framework (madder wash for ISO 27001, ochre wash for PCI DSS, neutral wash for SWIFT CSCF); an advisory SWIFT control carries a dashed edge.
+Status colours belong to control rows only and say what a control is, never how the page looks: `met` green for implemented, `partial` ochre for partially implemented, `gap` red for not implemented, `na` grey for not applicable. Each has a wash for the row behind it, and text on a status fill uses `on-status`: white in the light theme and near-black in the dark theme, where the fills themselves are light. The crosswalk chips are tinted by framework (madder wash for ISO 27001, ochre wash for PCI DSS, neutral wash for SWIFT CSCF); an advisory SWIFT control carries a dashed edge.
 
 Every text tier meets 4.5:1 on the surface it sits on, in both themes; the colour share of a screen stays near the data.
 
 ## Typography
 
-One family, Readex Pro, as a variable font covering Arabic and Latin. Arabic is the first language and the page is right-to-left by default; English mirrors it with logical properties. The scale is fixed in pixels, not fluid, because a tool is read at one distance: 12 / 13 / 14 / 15 / 17 / 20 / 24 / 28, with 32 reserved for the one lead figure on the screen (overall readiness) which is at least 1.3 times its sibling figures. Weight carries hierarchy before size: 700 for the title, domain and section headings, 600 for sub-domain titles, area titles and active controls, 500 for ledger figures, 400 for everything else.
+One family, Readex Pro, as a variable font covering Arabic and Latin. Arabic is the first language and the page is right-to-left by default; English mirrors it with logical properties. The scale is fixed in pixels, not fluid, because a tool is read at one distance: 12 / 13 / 14 / 15 / 17 / 20 / 24 / 28, with 32 reserved for the one lead figure on the screen (overall readiness) which is at least 1.3 times its sibling figures. Weight carries hierarchy before size: 700 for the title, domain and section headings, 600 for sub-domain titles, area titles and the pressed baseline switch, 500 for ledger figures, 400 for everything else. A selected tab or segment keeps the weight of its neighbours, so a state change never reflows the row.
 
-Arabic runs at 1.7 line height, English at 1.5. Every figure and identifier uses tabular numerals; numbers in tables are end-aligned under end-aligned headers. Headings balance their wrap, prose wraps pretty. Latin tokens inside Arabic text start with a capital or a digit, and numerals are Western in both languages.
+Arabic runs at 1.7 line height, English at 1.5. Every figure and identifier uses tabular numerals; numbers in tables are end-aligned under end-aligned headers. A compound numeral (11 / 875, or applicable / excluded) is written left to right as a fraction in both languages, inside a direction isolate, so it reads the same on every tab. Headings balance their wrap, prose wraps pretty. Latin tokens inside Arabic text start with a capital or a digit, and numerals are Western in both languages.
 
 ## Layout
 
@@ -172,17 +175,17 @@ Below 900px the index folds into a baseline switch and a wrapped row of domain c
 
 ## Elevation & Depth
 
-Surfaces are flat and separated by one tone step or a 1px rule in `rule` (controls take `rule-control`, one step stronger). Nothing at rest carries a shadow. Only what floats casts one: the every-visit notice and the toast. A hover state changes colour, never lifts.
+Surfaces are flat and separated by one tone step or a 1px rule in `rule` (controls take `rule-control`, one step stronger). A panel never holds a second bordered panel: a strip of figures inside a card is divided by rules alone. Nothing at rest carries a shadow. Only what floats casts one: the every-visit notice and the toast. A hover state changes colour, never lifts.
 
 ## Shapes
 
-Two radii and the pill: 12px for cards, panels and the ledger, 8px for every control, 999px for chips and tags. Bars are rounded to 4px and filled by clipping, so the fill keeps a crisp rounded end at any value. The woven band is an authored SVG pattern 40 by 14px, never a gradient.
+Two radii and the pill: 12px for cards, panels and the ledger, 8px for every control, 999px for chips and tags. Bars are rounded to 4px and filled by clipping, so the fill keeps a crisp rounded end at any value. The woven band is an authored SVG pattern 40 by 14px, never a gradient, repeated a whole number of times across any width so no diamond is cut at the reading edge.
 
 ## Components
 
 - **Tabs**: a row on a 1px rule, the active tab in madder with a 2px underline; arrow keys move between tabs.
 - **Segmented controls** (baseline switch, filters, applicability): one bordered group, the active segment filled with the emphasis fill.
-- **Status buttons**: four in one group per control, the pressed one filled with its status colour; disabled when the sub-domain is excluded.
+- **Status buttons**: four in one group per control, the pressed one filled with its status colour with `on-status` text; disabled when the sub-domain is excluded.
 - **Readiness ledger**: four cells with a 13px label over a figure, the lead figure in madder; bars with the label, a clipped fill and an end-aligned value.
 - **Area card**: id in madder, title at 600, page reference in meta, a summary in ink-2 limited to 80ch, framework chips, then the control rows.
 - **Notice and toast**: the only floating surfaces; the notice carries the woven crown.

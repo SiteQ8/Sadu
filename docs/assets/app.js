@@ -62,6 +62,8 @@ const S = (o) => (state.lang === 'ar' ? o.summary_ar : o.summary_en);
 const D = (o) => (state.lang === 'ar' ? o.desc_ar : o.desc_en);
 const short = (b) => { const x = IX.baselines.get(b.id) || b; return (state.lang === 'ar' ? x.short_ar : x.short_en) || x.title_en; };
 const pct = (v) => (v == null ? '-' : v + '%');
+// A compound numeral (assessed of total, applicable and excluded) always reads as a fraction, left to right, in both languages.
+const frac = (a, b) => `<span dir="ltr">${a} / ${b}</span>`;
 const narrow = () => window.matchMedia && window.matchMedia('(max-width: 900px)').matches;
 const bandLabel = (id) => (id ? t('band.' + id) : '');
 
@@ -162,8 +164,8 @@ function renderSummary() {
     + `<div class="ledger-cells">`
     + cell(t('readiness.overall'), o.readiness == null ? esc(t('status.unset')) : o.readiness + '%', o.band ? bandLabel(o.band) : '', o.readiness == null ? 'na' : 'lead')
     + cell(t('readiness.maturityAvg'), o.maturity == null ? esc(t('maturity.unset')) : String(o.maturity), o.maturity == null ? '' : t('maturity.' + Math.round(o.maturity)), o.maturity == null ? 'na' : '')
-    + cell(t('col.assessed'), `${o.assessed} / ${EV.total}`, t('register.controls'))
-    + cell(t('tab.soa'), `${EV.soa.applicable} / ${EV.soa.not_applicable}`, `${t('soa.applicable')} / ${t('soa.notApplicable')}`)
+    + cell(t('col.assessed'), frac(o.assessed, EV.total), t('register.controls'))
+    + cell(t('tab.soa'), frac(EV.soa.applicable, EV.soa.not_applicable), `${t('soa.applicable')} / ${t('soa.notApplicable')}`)
     + `</div>`
     + (narrow() ? `<details class="ledger-more"><summary>${esc(t('readiness.byBaseline'))} · ${esc(t('readiness.byDomain'))}</summary>` : `<div class="ledger-more">`)
     + `<div class="bars baselines"><h3>${esc(t('readiness.byBaseline'))}</h3><div class="rows">` + EV.baselines.map((b) => bar(short(b), b, 'base' + (b.id === state.baseline ? '' : ' off'))).join('') + `</div></div>`
@@ -353,8 +355,8 @@ function renderReport() {
   const dateStr = new Date().toLocaleDateString(state.lang === 'ar' ? 'ar-KW-u-nu-latn' : 'en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
   const rows = [];
   for (const b of EV.baselines) {
-    rows.push(`<tr class="base"><td>${esc(T(b))}</td><td class="num">${pct(b.readiness)}</td><td>${esc(bandLabel(b.band))}</td><td class="num">${b.maturity ?? '-'}</td><td class="num">${b.assessed}/${b.total}</td><td class="num">${b.counts.not_implemented}</td></tr>`);
-    for (const d of EV.domains.filter((x) => x.baseline === b.id)) rows.push(`<tr><td>${esc(d.ref)} ${esc(T(d))}</td><td class="num">${pct(d.readiness)}</td><td>${esc(bandLabel(d.band))}</td><td class="num">${d.maturity ?? '-'}</td><td class="num">${d.assessed}/${d.total}</td><td class="num">${d.counts.not_implemented}</td></tr>`);
+    rows.push(`<tr class="base"><td>${esc(T(b))}</td><td class="num">${pct(b.readiness)}</td><td>${esc(bandLabel(b.band))}</td><td class="num">${b.maturity ?? '-'}</td><td class="num">${frac(b.assessed, b.total)}</td><td class="num">${b.counts.not_implemented}</td></tr>`);
+    for (const d of EV.domains.filter((x) => x.baseline === b.id)) rows.push(`<tr><td>${esc(d.ref)} ${esc(T(d))}</td><td class="num">${pct(d.readiness)}</td><td>${esc(bandLabel(d.band))}</td><td class="num">${d.maturity ?? '-'}</td><td class="num">${frac(d.assessed, d.total)}</td><td class="num">${d.counts.not_implemented}</td></tr>`);
   }
   $('#panel-report').innerHTML =
     `<div class="panel-head"><h2>${esc(t('report.title'))}</h2><p>${esc(t('report.intro'))}</p></div>`
@@ -369,11 +371,11 @@ function renderReport() {
     + `<div class="rep-stat"><div class="n gap">${o.counts.not_implemented}</div><div class="k">${esc(t('status.notimplemented'))}</div></div>`
     + `<div class="rep-stat"><div class="n">${o.counts.not_applicable}</div><div class="k">${esc(t('status.notapplicable'))}</div></div>`
     + `<div class="rep-stat"><div class="n">${o.counts.unset}</div><div class="k">${esc(t('status.unset'))}</div></div>`
-    + `<div class="rep-stat"><div class="n">${EV.soa.applicable}/${EV.soa.not_applicable}</div><div class="k">${esc(t('soa.applicable'))}/${esc(t('soa.notApplicable'))}</div></div>`
+    + `<div class="rep-stat"><div class="n">${frac(EV.soa.applicable, EV.soa.not_applicable)}</div><div class="k">${esc(t('soa.applicable'))} / ${esc(t('soa.notApplicable'))}</div></div>`
     + `</div>`
     + `<table class="rep-table"><thead><tr><th>${esc(t('register.domain'))}</th><th class="num">${esc(t('readiness.title'))}</th><th>${esc(t('col.band'))}</th><th class="num">${esc(t('maturity.title'))}</th><th class="num">${esc(t('col.assessed'))}</th><th class="num">${esc(t('status.notimplemented'))}</th></tr></thead><tbody>${rows.join('')}</tbody></table>`
     + `<h3>${esc(t('report.gaps'))}</h3><p class="muted">${esc(t('report.gapsIntro'))}</p>`
-    + (EV.gaps.length ? `<ol class="gaps">${EV.gaps.slice(0, 15).map((g) => `<li>${esc(g.id)} ${esc(T(g))}: ${g.counts.not_implemented} / ${g.total}</li>`).join('')}</ol>` : `<p class="muted">${esc(t('cw.none'))}</p>`)
+    + (EV.gaps.length ? `<ol class="gaps">${EV.gaps.slice(0, 15).map((g) => `<li>${esc(g.id)} ${esc(T(g))}: ${frac(g.counts.not_implemented, g.total)}</li>`).join('')}</ol>` : `<p class="muted">${esc(t('cw.none'))}</p>`)
     + `</div>`;
 }
 
@@ -422,6 +424,8 @@ function showDisclaimer() {
     + `<p>${esc(t('popup.body1'))}</p><p>${esc(t('popup.body2'))}</p>`
     + `<div class="modal-actions"><button type="button" class="modal-ack" data-act="ack">${esc(t('popup.ack'))}</button></div>`
     + `</div></div>`;
+  // The page behind the scrim is inert while the notice is up, so Tab and Shift+Tab stay inside the dialog.
+  for (const el of document.querySelectorAll('.skip, .page')) el.inert = true;
   document.body.appendChild(wrap);
   $('.modal-ack', wrap).focus();
   wrap.addEventListener('click', (e) => { if (e.target === wrap) closeDisclaimer(); });
@@ -429,6 +433,7 @@ function showDisclaimer() {
 function closeDisclaimer() {
   const w = $('#disclaimer');
   if (w) w.remove();
+  for (const el of document.querySelectorAll('.skip, .page')) el.inert = false;
   if (lastFocus && lastFocus.focus) lastFocus.focus();
 }
 
