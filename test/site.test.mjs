@@ -66,3 +66,22 @@ test('values come from the scales: one typeface, three radii, spacing tokens', (
   const radii = new Set([...css.matchAll(/border-radius:\s*([^;]+);/g)].map((m) => m[1].trim()));
   for (const r of radii) assert.ok(['var(--r-card)', 'var(--r-control)', '999px', '4px', '3px', '6px'].includes(r), `radius ${r} is from the scale`);
 });
+
+test('the finish review holds: status fills, the band, the toast, the report strip and compound numerals', () => {
+  const pressed = [...css.matchAll(/\.st-btn\[aria-pressed='true'\]\[data-st='[a-z_]+'\]\s*\{([^}]*)\}/g)].map((m) => m[1]);
+  assert.equal(pressed.length, 4, 'four pressed status rules');
+  for (const body of pressed) assert.match(body, /color: var\(--on-status\)/, 'text on a status fill comes from the per-theme token, never a literal white');
+  assert.equal((css.match(/--on-status:/g) || []).length, 3, 'the token is set for the light theme and both dark routes');
+  assert.equal((css.match(/40px 14px round no-repeat/g) || []).length, 2, 'the band and the crown repeat a whole number of diamonds');
+  assert.match(css, /--toast-rise: 100%/);
+  assert.match(css, /prefers-reduced-motion: reduce\)\s*\{\s*:root \{[^}]*--toast-rise: 0%/, 'the toast rise collapses under reduced motion');
+  assert.match(css, /translateY\(var\(--toast-rise\)\)/);
+  assert.ok(!/\.rep-grid \{[^}]*border-radius/.test(css), 'the report strip is rules inside the card, not a second card');
+  assert.ok(!/\.tabs \[role='tab'\]\[aria-selected='true'\] \{[^}]*font-weight/.test(css), 'a selected tab keeps its weight');
+  assert.ok(!/\.seg-btn\[aria-pressed='true'\] \{[^}]*font-weight/.test(css), 'a pressed segment keeps its weight');
+  assert.match(app, /const frac = \(a, b\) => `<span dir="ltr">\$\{a\} \/ \$\{b\}<\/span>`/);
+  const raw = app.split('\n').filter((l) => /\$\{(?!t\(|esc\()[^}]+\}\s*\/\s*\$\{(?!t\(|esc\()/.test(l) && !/^const frac|github|owner/.test(l));
+  assert.deepEqual(raw, [], 'every compound numeral goes through frac()');
+  assert.match(app, /\.inert = true/, 'the page is inert while the notice is up');
+  assert.match(app, /\.inert = false/, 'and released when it closes');
+});
